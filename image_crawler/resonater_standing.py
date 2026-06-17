@@ -19,14 +19,6 @@ STANDING_DIR = Path("images/standings")
 STANDING_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def get_character_names():
-    names = []
-
-    for file in THUMBNAIL_DIR.glob("*-thumbnail.png"):
-        name = file.stem.replace("-thumbnail", "")
-        names.append(name)
-
-    return names
 
 
 def get_character_urls():
@@ -94,7 +86,6 @@ def find_standing_image(section):
 
 
 def download_standing_image(name, wiki_url):
-    print(f"처리 중: {name}")
 
     response = requests.get(wiki_url, headers=HEADERS)
     response.raise_for_status()
@@ -144,17 +135,11 @@ def download_standing_image(name, wiki_url):
 
 
 def main():
-    names = get_character_names()
-
-    if not names:
-        print("썸네일 파일을 찾을 수 없습니다.")
-        return
 
     character_urls = get_character_urls()
 
-    print(f"썸네일 기준 캐릭터 수: {len(names)}")
 
-    for name in names:
+    for name, url in character_urls.items():
 
         wiki_url = character_urls.get(name)
 
@@ -163,7 +148,7 @@ def main():
             continue
 
         try:
-            download_standing_image(name, wiki_url)
+            download_standing_image(name, url)
 
         except Exception as e:
             print(f"[오류] {name}: {e}")
