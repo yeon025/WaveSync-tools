@@ -30,49 +30,59 @@ def crawl_weapons():
     soup = BeautifulSoup(response.text, "html.parser")
 
     weapons = []
-    seen = set()
+    images = []
+    names = []
 
-    for summary in soup.find_all("summary"):
+    for details in soup.find_all("details"):
+
+        summary = details.find("summary")
+        if not summary:
+            continue
 
         title = summary.get_text(strip=True)
 
         if not any(section in title for section in TARGET_SECTIONS):
             continue
 
-        section = summary.find_parent("details")
+        trs = details.find_all("tr")
 
-        if section is None:
-            continue
 
-        for img in section.select('img[alt^="명조 "]'):
+        for tr in trs:
+            # 이미지 추출    
+            for img in tr.select("img"):
+                # noscript 내부 중복 제거
+                if img.find_parent("noscript"):
+                    continue
+                
+                alt = img.get("alt")
+                if not alt or not alt.startswith("명조 "):
+                    continue
 
-            src = img.get("data-src") or img.get("src")
+                src = img.get("data-src") or img.get("src")
 
-            if not src:
-                continue
+                if not src or src.startswith("data:image"):
+                    continue
 
-            if src.startswith("data:image"):
-                continue
+                if src.startswith("//"):
+                    src = "https:" + src
 
-            if src.startswith("//"):
-                src = "https:" + src
+                images.append(src)
 
-            name = (
-                img["alt"]
-                .replace("명조 ", "")
-                .strip()
-            )
-            
+            # 이름 추출
+            for a in tr.select("strong a"):
+                name = a.get_text(strip=True)
+                if name:
+                    names.append(name)
 
-            if name in seen:
-                continue
-
-            seen.add(name)
-
-            weapons.append({
-                "name": name,
-                "image_url": src
-            })
+            # 매칭
+            if len(images) == len(names):
+                for i, name in enumerate(names):
+                    weapons.append({
+                        "name": name,
+                        "image_url": images[i]
+                    })
+                images = []
+                names = []
 
     return weapons
 
@@ -87,7 +97,6 @@ def download_weapon_image(weapon):
     img = Image.open(BytesIO(response.content))
 
     save_path = SAVE_DIR / f'{weapon["name"]}.png'
-
     img.save(save_path, "PNG")
 
     print(f"[완료] {save_path}")
