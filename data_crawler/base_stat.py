@@ -6,14 +6,17 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
-CHARACTER_LIST_URL = (
+URL = (
     "https://namu.wiki/w/"
     "%EB%AA%85%EC%A1%B0:%20%EC%9B%8C%EB%8D%94%EB%A7%81%20%EC%9B%A8%EC%9D%B4%EB%B8%8C/%EA%B3%B5%EB%AA%85%EC%9E%90"
 )
 
 
 def get_character_urls():
-    response = requests.get(CHARACTER_LIST_URL, headers=HEADERS)
+    traveler_names = ["방랑자·기류", "방랑자·회절", "방랑자·인멸"]
+    traveler_idx = 0
+
+    response = requests.get(URL, headers=HEADERS)
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "html.parser")
@@ -23,11 +26,14 @@ def get_character_urls():
         string=lambda s: s and "속성별" in s
     )
 
-    section = summary.find_parent("details")
+    if summary is None:
+        raise ValueError("[ 속성별 ] 섹션을 찾을 수 없습니다.")
 
-    result = {}
+    attribute_section = summary.find_parent("details")
 
-    for link in section.select("a[href^='/w/']"):
+    character_urls = {}
+
+    for link in attribute_section.select("a[href^='/w/']"):
 
         img = link.select_one("img[alt$='아이콘']")
 
@@ -43,12 +49,18 @@ def get_character_urls():
             .replace(" 아이콘", "")
         )
 
-        result[name] = (
-            "https://namu.wiki"
-            + link["href"]
-        )
+        if name == "방랑자":
+            name = traveler_names[traveler_idx]
+            traveler_idx += 1
 
-    return result
+        href = link.get("href")
+
+        if not href:
+            continue
+
+        character_urls[name] = "https://namu.wiki" + href
+
+    return character_urls
 
 
 def extract_stats(soup):
@@ -100,25 +112,22 @@ def get_character_stats(name, url):
 def main():
     character_urls = get_character_urls()
 
-    with open("data/character_stats.txt", "w", encoding="utf-8") as f:
+    results = []
 
-        for name, url in character_urls.items():
+    for name, url in character_urls.items():
+        try:
+            stats = get_character_stats(name, url)
 
-            try:
-                stats = get_character_stats(name, url)
+            if stats:
+                results.append(stats)
 
-                f.write(
-                    json.dumps(
-                        stats,
-                        ensure_ascii=False,
-                        indent=4
-                    )
-                )
+        except Exception as e:
+            print(f"[실패] {name}: {e}")
 
-                f.write("\n")
+    with open("datas/character_stats.json", "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=4)
 
-            except Exception as e:
-                print(f"[실패] {name}: {e}")
+    print(f"{len(results)}개 저장 완료")
 
 
 if __name__ == "__main__":
