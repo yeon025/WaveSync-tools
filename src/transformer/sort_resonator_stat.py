@@ -2,7 +2,7 @@ import json
 
 
 def main():
-    with open("json/transform/resonator_stats.json", "r", encoding="utf-8") as f:
+    with open("resources/json/transform/resonator_stats.json", "r", encoding="utf-8") as f:
         resonators = json.load(f)
 
     resonators.sort(
@@ -13,7 +13,7 @@ def main():
     )
 
     with open(
-        "json/transform/resonator_stats.json",
+        "resources/json/transform/resonator_stats.json",
         "w",
         encoding="utf-8"
     ) as f:

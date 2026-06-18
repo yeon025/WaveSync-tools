@@ -5,10 +5,10 @@ def sql_number(value):
         return "NULL"
     return value.replace("%", "")
 
-with open("json/raw_json/resonance_nodes.json", "r", encoding="utf-8") as f:
+with open("resources/json/raw_json/resonance_nodes.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
-with open("sql/resonator_node_master.sql", "w", encoding="utf-8") as f:
+with open("resources/sql/resonator_node_master.sql", "w", encoding="utf-8") as f:
     for item in data:
         sql = (
             "INSERT INTO resonator_node_master ("

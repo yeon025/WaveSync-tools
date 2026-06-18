@@ -1,6 +1,6 @@
 import json
 
-with open("json/transform/weapon.json", "r", encoding="utf-8") as f:
+with open("resources/json/transform/weapon.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 def sql_text(value):
@@ -11,7 +11,7 @@ def sql_number(value):
         return "NULL"
     return value.replace("%", "")
 
-with open("sql/weapon_master.sql", "w", encoding="utf-8") as f:
+with open("resources/sql/weapon_master.sql", "w", encoding="utf-8") as f:
     for item in data:
         sql = (
             "INSERT INTO weapon_master "

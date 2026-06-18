@@ -3,8 +3,8 @@ from pathlib import Path
 
 JSON_PATH = "json/raw_json/resonator_stats.json"
 
-THUMBNAIL_DIR = Path("images/thumbnails")
-STANDING_DIR = Path("images/standings")
+THUMBNAIL_DIR = Path("resources/images/thumbnails")
+STANDING_DIR = Path("resources/images/standings")
 
 thumbnail_map = {}
 standing_map = {}
@@ -42,7 +42,7 @@ for resonator in resonators:
         resonator["standing image"] = standing_map[name]
 
 # 저장
-with open("json/transform/resonator_stats.json", "w", encoding="utf-8") as f:
+with open("resources/json/transform/resonator_stats.json", "w", encoding="utf-8") as f:
     json.dump(resonators, f, ensure_ascii=False, indent=4)
 
 print("완료")

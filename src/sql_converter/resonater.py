@@ -1,9 +1,9 @@
 import json
 
-with open("json/transform/resonator_stats.json", "r", encoding="utf-8") as f:
+with open("resources/json/transform/resonator_stats.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
-with open("sql/resonator_master.sql", "w", encoding="utf-8") as f:
+with open("resources/sql/resonator_master.sql", "w", encoding="utf-8") as f:
     for item in data:
         standing_image = item.get("standing image")
 

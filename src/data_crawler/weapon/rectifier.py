@@ -9,7 +9,7 @@ HEADERS = {
 
 URL = (
     "https://namu.wiki/w/"
-    "%EB%AA%85%EC%A1%B0:%20%EC%9B%8C%EB%8D%94%EB%A7%81%20%EC%9B%A8%EC%9D%B4%EB%B8%8C/%EB%AC%B4%EA%B8%B0/%EA%B6%8C%EA%B0%91"
+    "%EB%AA%85%EC%A1%B0:%20%EC%9B%8C%EB%8D%94%EB%A7%81%20%EC%9B%A8%EC%9D%B4%EB%B8%8C/%EB%AC%B4%EA%B8%B0/%EC%A6%9D%ED%8F%AD%EA%B8%B0"
 )
 
 html = requests.get(URL, headers=HEADERS).text
@@ -60,7 +60,7 @@ for tbody in soup.find_all("tbody"):
 
 
 
-with open("json/weapon/gauntlet.json", "w", encoding="utf-8") as f:
+with open("resources/json/raw_json/weapon/rectifier.json", "w", encoding="utf-8") as f:
     json.dump(
         weapons,
         f,
@@ -68,4 +68,4 @@ with open("json/weapon/gauntlet.json", "w", encoding="utf-8") as f:
         indent=4
     )
 
-print(f"{len(weapons)}개 권갑 저장 완료")
+print(f"{len(weapons)}개 증폭기 저장 완료")

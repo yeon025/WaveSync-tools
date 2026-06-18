@@ -1,6 +1,7 @@
 import requests
-import json
 from bs4 import BeautifulSoup
+import json
+import re
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0"
@@ -10,6 +11,11 @@ URL = (
     "https://namu.wiki/w/"
     "%EB%AA%85%EC%A1%B0:%20%EC%9B%8C%EB%8D%94%EB%A7%81%20%EC%9B%A8%EC%9D%B4%EB%B8%8C/%EA%B3%B5%EB%AA%85%EC%9E%90"
 )
+
+html = requests.get(URL, headers=HEADERS).text
+soup = BeautifulSoup(html, "html.parser")
+
+
 
 
 def get_character_urls():
@@ -63,50 +69,58 @@ def get_character_urls():
     return character_urls
 
 
-def extract_stats(soup):
-    stats = {}
+def find_node(name, url):
+    nodes = []
 
-    targets = {"HP", "공격력", "방어력"}
-
-    for strong in soup.select("strong"):
-
-        name = strong.get_text(strip=True)
-
-        if name not in targets:
-            continue
-
-        if name in stats:
-            continue
-
-        row = strong.find_parent("div").parent
-
-        cols = row.find_all("div", recursive=False)
-
-        if len(cols) < 2:
-            continue
-
-        stats[name] = cols[1].get_text(strip=True)
-
-        if stats.keys() >= targets:
-            break
-
-    return stats
-
-
-def get_character_stats(name, url):
     response = requests.get(url, headers=HEADERS)
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "html.parser")
 
-    stats = extract_stats(soup)
+    for details in soup.find_all("details"):
+        for table in details.find_all("table"):
+            trs = table.find_all("tr")
+
+            if len(trs) != 2:
+                continue
+
+            text = trs[1].get_text(" ", strip=True)
+
+            if "증가" in text:
+                nodes.append(text)
+
+            if len(nodes) >= 4:
+                break
+
+        if len(nodes) >= 4:
+            break
+
+    if len(nodes) < 4:
+        return None
+
+    parsed = []
+
+    for node in nodes:
+        match = re.match(r"(.+?)\s+([\d.]+%)", node)
+
+        if not match:
+            return None
+
+        node_type = match.group(1).rstrip("이가")
+        value = match.group(2)
+
+        parsed.append((node_type, value))
 
     return {
         "name": name,
-        "hp": stats.get("HP"),
-        "attack": stats.get("공격력"),
-        "defense": stats.get("방어력"),
+        "outer_node_type": parsed[0][0],
+        "outer_top_node_value": parsed[1][1],
+        "outer_middle_node_value": parsed[0][1],
+        "inner_node_type": parsed[2][0],
+        "inner_top_node_value": parsed[3][1],
+        "inner_middle_node_value": parsed[2][1],
     }
+
 
 
 def main():
@@ -116,15 +130,15 @@ def main():
 
     for name, url in character_urls.items():
         try:
-            stats = get_character_stats(name, url)
+            result = find_node(name, url)
 
-            if stats:
-                results.append(stats)
+            if result:
+                results.append(result)
 
         except Exception as e:
-            print(f"[실패] {name}: {e}")
+            print(f"[오류] {name}: {e}")
 
-    with open("json/character_stats.json", "w", encoding="utf-8") as f:
+    with open("resources/json/raw_json/resonance_nodes.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
     print(f"{len(results)}개 저장 완료")

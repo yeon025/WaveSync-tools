@@ -19,7 +19,7 @@ TARGET_SECTIONS = {
     "3성 이하 목록"
 }
 
-SAVE_DIR = Path("images/weapons")
+SAVE_DIR = Path("resources/images/weapons")
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
 

@@ -13,7 +13,7 @@ URL = (
     "%EB%AA%85%EC%A1%B0:%20%EC%9B%8C%EB%8D%94%EB%A7%81%20%EC%9B%A8%EC%9D%B4%EB%B8%8C/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%85%98"
 )
 
-SAVE_DIR = Path("images/echoes")
+SAVE_DIR = Path("resources/images/echoes")
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
 

@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
 
-JSON_PATH = "json/transform/weapon.json"
+JSON_PATH = "resources/json/transform/weapon.json"
 
-WEAPON_DIR = Path("images/weapons")
+WEAPON_DIR = Path("resources/images/weapons")
 
 weapon_map = {}
 
@@ -29,7 +29,7 @@ for weapon in weapons:
 
 
 # 저장
-with open("json/transform/weapon.json", "w", encoding="utf-8") as f:
+with open("resources/json/transform/weapon.json", "w", encoding="utf-8") as f:
     json.dump(weapons, f, ensure_ascii=False, indent=4)
 
 print("완료")

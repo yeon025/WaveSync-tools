@@ -28,7 +28,7 @@ def download_character_thumbnails():
 
     attribute_section = summary.find_parent("details")
 
-    save_dir = Path("images/thumbnails")
+    save_dir = Path("resources/images/thumbnails")
     save_dir.mkdir(exist_ok=True)
 
     characters = []
