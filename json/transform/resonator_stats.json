@@ -70,7 +70,9 @@
         "hp": "10825",
         "attack": "412",
         "defense": "1258",
-        "release version": 101
+        "release version": 101,
+        "thumbnail image": "resonator-thumbnail-images/방랑자-thumbnail.png",
+        "standing image": "resonator-standing-images/방랑자-standing.png"
     },
     {
         "name": "방랑자·회절",
@@ -79,7 +81,9 @@
         "hp": "11400",
         "attack": "375",
         "defense": "1368",
-        "release version": 101
+        "release version": 101,
+        "thumbnail image": "resonator-thumbnail-images/방랑자-thumbnail.png",
+        "standing image": "resonator-standing-images/방랑자-standing.png"
     },
     {
         "name": "벨리나",
@@ -171,6 +175,7 @@
     {
         "name": "카카루",
         "element": "전도",
+        "rarity": 5,
         "hp": "10500",
         "attack": "437",
         "defense": "1185",
@@ -338,7 +343,9 @@
         "hp": "10775",
         "attack": "437",
         "defense": "1136",
-        "release version": 222
+        "release version": 222,
+        "thumbnail image": "resonator-thumbnail-images/방랑자-thumbnail.png",
+        "standing image": "resonator-standing-images/방랑자-standing.png"
     },
     {
         "name": "젠니",

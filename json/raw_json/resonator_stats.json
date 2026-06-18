@@ -173,6 +173,7 @@
     {
         "name": "카카루",
         "element": "전도",
+        "rarity": 5,
         "hp": "10500",
         "attack": "437",
         "defense": "1185",
