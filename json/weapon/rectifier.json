@@ -1,0 +1,184 @@
+[
+    {
+        "weapon_name": "파도의 기록",
+        "attack_value": "500",
+        "main_type": "공격력",
+        "main_value": "54.0%",
+        "refine_type": "공명 효율",
+        "refine_value": "12.8%/16%/19.2%/22.4%/25.6%"
+    },
+    {
+        "weapon_name": "보손 관측기",
+        "attack_value": "525",
+        "main_type": "공명 효율",
+        "main_value": "38.8%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%%"
+    },
+    {
+        "weapon_name": "꼭두각시의 손",
+        "attack_value": "500",
+        "main_type": "크리티컬",
+        "main_value": "36.0%",
+        "refine_type": "전체 속성 피해 보너스",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "옥수 비단",
+        "attack_value": "500",
+        "main_type": "크리티컬 피해",
+        "main_value": "72%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "뭇별의 교향곡",
+        "attack_value": "412",
+        "main_type": "공명 효율",
+        "main_value": "77%",
+        "refine_type": "HP",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "광휘의 찬송가",
+        "attack_value": "500",
+        "main_type": "크리티컬",
+        "main_value": "36.0%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "바다의 속삭임",
+        "attack_value": "500",
+        "main_type": "크리티컬 피해",
+        "main_value": "72.0%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "잊혀진 피안의 슬픈 악장",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "위조된 작은별",
+        "attack_value": "500",
+        "main_type": "크리티컬",
+        "main_value": "36.0%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "프리즈 프레임",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "금주의 수호",
+        "attack_value": "387",
+        "main_type": "공격력",
+        "main_value": "36.4%"
+    },
+    {
+        "weapon_name": "판타지 변주",
+        "attack_value": "337",
+        "main_type": "공명 효율",
+        "main_value": "51.8%"
+    },
+    {
+        "weapon_name": "굉음",
+        "attack_value": "412",
+        "main_type": "HP",
+        "main_value": "30.3%"
+    },
+    {
+        "weapon_name": "융합의 원반",
+        "attack_value": "462",
+        "main_type": "공격력",
+        "main_value": "18.2%"
+    },
+    {
+        "weapon_name": "청음",
+        "attack_value": "412",
+        "main_type": "크리티컬",
+        "main_value": "20.2%"
+    },
+    {
+        "weapon_name": "눈부신 빛",
+        "attack_value": "412",
+        "main_type": "크리티컬 피해",
+        "main_value": "40.5%"
+    },
+    {
+        "weapon_name": "25형 증폭기 · 울림의 멜로디",
+        "attack_value": "337",
+        "main_type": "공명 효율",
+        "main_value": "51.8%"
+    },
+    {
+        "weapon_name": "허위의 왈츠",
+        "attack_value": "462",
+        "main_type": "공격력",
+        "main_value": "18.2%"
+    },
+    {
+        "weapon_name": "심해의 메아리",
+        "attack_value": "337",
+        "main_type": "공명 효율",
+        "main_value": "51.8%"
+    },
+    {
+        "weapon_name": "바다의 선물",
+        "attack_value": "463",
+        "main_type": "공격력",
+        "main_value": "18.2%"
+    },
+    {
+        "weapon_name": "흑야의 증폭기 · 흑광",
+        "attack_value": "325",
+        "main_type": "공격력",
+        "main_value": "24.3%"
+    },
+    {
+        "weapon_name": "수행자의 증폭기 · 탐색",
+        "attack_value": "300",
+        "main_type": "공명 효율",
+        "main_value": "32.4%"
+    },
+    {
+        "weapon_name": "원능의 증폭기 · 견습V",
+        "attack_value": "300",
+        "main_type": "HP",
+        "main_value": "30.4%"
+    },
+    {
+        "weapon_name": "수호자의 증폭기 · 모략",
+        "attack_value": "325",
+        "main_type": "공격력",
+        "main_value": "24.3%",
+        "refine_type": "일반 공격과 강공격 피해 보너스",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "태초의 증폭기",
+        "attack_value": "275",
+        "main_type": "공격력",
+        "main_value": "14.8%",
+        "refine_type": "공격력",
+        "refine_value": "5%/6.25%/7.5%/8.75%/10%"
+    },
+    {
+        "weapon_name": "견습용 증폭기",
+        "attack_value": "250",
+        "main_type": "공격력",
+        "main_value": "11.5%",
+        "refine_type": "공격력",
+        "refine_value": "4%/5%/6%/7%/8%"
+    }
+]

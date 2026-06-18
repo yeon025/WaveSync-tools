@@ -1,0 +1,162 @@
+[
+    {
+        "weapon_name": "푸른물결의 빛",
+        "attack_value": "587",
+        "main_type": "공격력",
+        "main_value": "36.4%",
+        "refine_type": "공명 효율",
+        "refine_value": "12.8%/16%/19.2%/22.4%/25.6%"
+    },
+    {
+        "weapon_name": "에너지 절단",
+        "attack_value": "587",
+        "main_type": "크리티컬 피해",
+        "main_value": "48.6%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "청룡의 천장",
+        "attack_value": "587",
+        "main_type": "크리티컬 피해",
+        "main_value": "48.6%",
+        "refine_type": "전체 속성 피해 보너스",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "태평성대",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "전체 속성 피해 보너스",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "불길",
+        "attack_value": "587",
+        "main_type": "크리티컬 피해",
+        "main_value": "48.6%",
+        "refine_type": "공격력이",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "천둥벼락을 다스리는 권능",
+        "attack_value": "675",
+        "main_type": "크리티컬",
+        "main_value": "12.1%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "쿠모키리(曇斬)",
+        "attack_value": "500",
+        "main_type": "크리티컬",
+        "main_value": "36.0%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "별하늘 연산 측정기",
+        "attack_value": "412",
+        "main_type": "공명 효율",
+        "main_value": "77.0%",
+        "refine_type": "방어력",
+        "refine_value": "16%/20%/24%/28%/32%"
+    },
+    {
+        "weapon_name": "장야의 불빛",
+        "attack_value": "337",
+        "main_type": "방어력",
+        "main_value": "61.5%"
+    },
+    {
+        "weapon_name": "기묘한 울림",
+        "attack_value": "337",
+        "main_type": "공명 효율",
+        "main_value": "51.8%"
+    },
+    {
+        "weapon_name": "저무는 동녘",
+        "attack_value": "412",
+        "main_type": "공격력",
+        "main_value": "30.3%"
+    },
+    {
+        "weapon_name": "멸망의 주파수",
+        "attack_value": "462",
+        "main_type": "공격력",
+        "main_value": "18.2%"
+    },
+    {
+        "weapon_name": "가을의 무늬",
+        "attack_value": "412",
+        "main_type": "크리티컬",
+        "main_value": "20.2%"
+    },
+    {
+        "weapon_name": "금빛 하늘",
+        "attack_value": "412",
+        "main_type": "크리티컬 피해",
+        "main_value": "40.5%"
+    },
+    {
+        "weapon_name": "41형 대검 · 무거운 책임",
+        "attack_value": "412",
+        "main_type": "공명 효율",
+        "main_value": "32.3%"
+    },
+    {
+        "weapon_name": "용서의 명상록",
+        "attack_value": "462",
+        "main_type": "공격력",
+        "main_value": "18.2%"
+    },
+    {
+        "weapon_name": "흑야의 대검 · 현명",
+        "attack_value": "325",
+        "main_type": "공격력",
+        "main_value": "24.3%"
+    },
+    {
+        "weapon_name": "수행자의 대검 · 벽로",
+        "attack_value": "300",
+        "main_type": "공명 효율",
+        "main_value": "32.4%"
+    },
+    {
+        "weapon_name": "원능의 대검 · 견습I",
+        "attack_value": "300",
+        "main_type": "방어력",
+        "main_value": "38.5%"
+    },
+    {
+        "weapon_name": "수호자의 대검 · 근성",
+        "attack_value": "325",
+        "main_type": "공격력",
+        "main_value": "24.3%",
+        "refine_type": "일반 공격과 강공격 피해 보너스",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "천상의 음률",
+        "attack_value": "300",
+        "main_type": "공격력",
+        "main_value": "30.4%"
+    },
+    {
+        "weapon_name": "태초의 대검",
+        "attack_value": "275",
+        "main_type": "공격력",
+        "main_value": "14.8%",
+        "refine_type": "공격력",
+        "refine_value": "5%/6.25%/7.5%/8.75%/10%"
+    },
+    {
+        "weapon_name": "견습용 대검",
+        "attack_value": "250",
+        "main_type": "공격력",
+        "main_value": "11.5%",
+        "refine_type": "공격력",
+        "refine_value": "4%/5%/6%/7%/8%"
+    }
+]

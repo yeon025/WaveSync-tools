@@ -1,0 +1,478 @@
+[
+    {
+        "name": "설지",
+        "element": "응결",
+        "rarity": 4,
+        "hp": "12812",
+        "attack": "212",
+        "defense": "1002",
+        "release version": 101
+    },
+    {
+        "name": "산화",
+        "element": "응결",
+        "rarity": 4,
+        "hp": "10062",
+        "attack": "275",
+        "defense": "941",
+        "release version": 101
+    },
+    {
+        "name": "능양",
+        "element": "응결",
+        "rarity": 5,
+        "hp": "10387",
+        "attack": "437",
+        "defense": "1209",
+        "release version": 101
+    },
+    {
+        "name": "절지",
+        "element": "응결",
+        "rarity": 5,
+        "hp": "12250",
+        "attack": "375",
+        "defense": "1197",
+        "release version": 121
+    },
+    {
+        "name": "유호",
+        "element": "응결",
+        "rarity": 4,
+        "hp": "9975",
+        "attack": "262",
+        "defense": "1051",
+        "release version": 132
+    },
+    {
+        "name": "카를로타",
+        "element": "응결",
+        "rarity": 5,
+        "hp": "12450",
+        "attack": "462",
+        "defense": "1197",
+        "release version": 201
+    },
+    {
+        "name": "히유키",
+        "element": "응결",
+        "rarity": 5,
+        "hp": "10300",
+        "attack": "462",
+        "defense": "1112",
+        "release version": 331
+    },
+    {
+        "name": "루실라",
+        "element": "응결",
+        "rarity": 5,
+        "hp": "12237",
+        "attack": "375",
+        "defense": "1197",
+        "release version": 341
+    },
+    {
+        "name": "치샤",
+        "element": "용융",
+        "rarity": 4,
+        "hp": "9087",
+        "attack": "300",
+        "defense": "953",
+        "release version": 101
+    },
+    {
+        "name": "모르테피",
+        "element": "용융",
+        "rarity": 4,
+        "hp": "10025",
+        "attack": "250",
+        "defense": "1136",
+        "release version": 101
+    },
+    {
+        "name": "앙코",
+        "element": "용융",
+        "rarity": 5,
+        "hp": "10512",
+        "attack": "425",
+        "defense": "1246",
+        "release version": 101
+    },
+    {
+        "name": "장리",
+        "element": "용융",
+        "rarity": 5,
+        "hp": "10387",
+        "attack": "462",
+        "defense": "1100",
+        "release version": 112
+    },
+    {
+        "name": "브렌트",
+        "element": "용융",
+        "rarity": 5,
+        "hp": "11675",
+        "attack": "375",
+        "defense": "1307",
+        "release version": 212
+    },
+    {
+        "name": "루파",
+        "element": "용융",
+        "rarity": 5,
+        "hp": "11912",
+        "attack": "387",
+        "defense": "1185",
+        "release version": 242
+    },
+    {
+        "name": "갈브레나",
+        "element": "용융",
+        "rarity": 5,
+        "hp": "10300",
+        "attack": "462",
+        "defense": "1112",
+        "release version": 271
+    },
+    {
+        "name": "모니에",
+        "element": "용융",
+        "rarity": 5,
+        "hp": "15375",
+        "attack": "287",
+        "defense": "1356",
+        "release version": 302
+    },
+    {
+        "name": "에이메스",
+        "element": "용융",
+        "rarity": 5,
+        "hp": "11025",
+        "attack": "425",
+        "defense": "1148",
+        "release version": 311
+    },
+    {
+        "name": "데니아",
+        "element": "용융",
+        "rarity": 5,
+        "hp": "11025",
+        "attack": "425",
+        "defense": "1148",
+        "release version": 332
+    },
+    {
+        "name": "연무",
+        "element": "전도",
+        "rarity": 4,
+        "hp": "8525",
+        "attack": "225",
+        "defense": "1637",
+        "release version": 101
+    },
+    {
+        "name": "카카루",
+        "element": "전도",
+        "hp": "10500",
+        "attack": "437",
+        "defense": "1185",
+        "release version": 101
+    },
+    {
+        "name": "음림",
+        "element": "전도",
+        "rarity": 5,
+        "hp": "11000",
+        "attack": "400",
+        "defense": "1283",
+        "release version": 102
+    },
+    {
+        "name": "상리요",
+        "element": "전도",
+        "rarity": 5,
+        "hp": "10625",
+        "attack": "425",
+        "defense": "1222",
+        "release version": 122
+    },
+    {
+        "name": "루미",
+        "element": "전도",
+        "rarity": 4,
+        "hp": "8500",
+        "attack": "337",
+        "defense": "880",
+        "release version": 142
+    },
+    {
+        "name": "아우구스타",
+        "element": "전도",
+        "rarity": 5,
+        "hp": "10300",
+        "attack": "462",
+        "defense": "1112",
+        "release version": 261
+    },
+    {
+        "name": "복링",
+        "element": "전도",
+        "rarity": 4,
+        "hp": "10625",
+        "attack": "225",
+        "defense": "1259",
+        "release version": 282
+    },
+    {
+        "name": "레베카",
+        "element": "전도",
+        "rarity": 5,
+        "hp": "11600",
+        "attack": "400",
+        "defense": "1173",
+        "release version": 341
+    },
+    {
+        "name": "방랑자·기류",
+        "element": "기류",
+        "rarity": 5,
+        "hp": "10775",
+        "attack": "437",
+        "defense": "1136",
+        "release version": 222
+    },
+    {
+        "name": "양양",
+        "element": "기류",
+        "rarity": 4,
+        "hp": "10200",
+        "attack": "250",
+        "defense": "1099",
+        "release version": 101
+    },
+    {
+        "name": "알토",
+        "element": "기류",
+        "rarity": 4,
+        "hp": "9850",
+        "attack": "262",
+        "defense": "1075",
+        "release version": 101
+    },
+    {
+        "name": "감심",
+        "element": "기류",
+        "rarity": 5,
+        "hp": "14112",
+        "attack": "337",
+        "defense": "1124",
+        "release version": 101
+    },
+    {
+        "name": "기염",
+        "element": "기류",
+        "rarity": 5,
+        "hp": "10487",
+        "attack": "437",
+        "defense": "1185",
+        "release version": 101
+    },
+    {
+        "name": "샤콘",
+        "element": "기류",
+        "rarity": 5,
+        "hp": "12237",
+        "attack": "375",
+        "defense": "1197",
+        "release version": 232
+    },
+    {
+        "name": "카르티시아",
+        "element": "기류",
+        "rarity": 5,
+        "hp": "14800",
+        "attack": "312",
+        "defense": "611",
+        "release version": 241
+    },
+    {
+        "name": "유노",
+        "element": "기류",
+        "rarity": 5,
+        "hp": "10525",
+        "attack": "450",
+        "defense": "1124",
+        "release version": 262
+    },
+    {
+        "name": "구원",
+        "element": "기류",
+        "rarity": 5,
+        "hp": "12237",
+        "attack": "375",
+        "defense": "1197",
+        "release version": 272
+    },
+    {
+        "name": "시그리카",
+        "element": "기류",
+        "rarity": 5,
+        "hp": "10775",
+        "attack": "437",
+        "defense": "1136",
+        "release version": 321
+    },
+    {
+        "name": "방랑자·회절",
+        "element": "회절",
+        "rarity": 5,
+        "hp": "11400",
+        "attack": "375",
+        "defense": "1368",
+        "release version": 101
+    },
+    {
+        "name": "벨리나",
+        "element": "회절",
+        "rarity": 5,
+        "hp": "14237",
+        "attack": "337",
+        "defense": "1099",
+        "release version": 101
+    },
+    {
+        "name": "금희",
+        "element": "회절",
+        "rarity": 5,
+        "hp": "10825",
+        "attack": "412",
+        "defense": "1258",
+        "release version": 111
+    },
+    {
+        "name": "파수인",
+        "element": "회절",
+        "rarity": 5,
+        "hp": "16712",
+        "attack": "287",
+        "defense": "1099",
+        "release version": 131
+    },
+    {
+        "name": "페비",
+        "element": "회절",
+        "rarity": 5,
+        "hp": "10825",
+        "attack": "412",
+        "defense": "1258",
+        "release version": 211
+    },
+    {
+        "name": "젠니",
+        "element": "회절",
+        "rarity": 5,
+        "hp": "10775",
+        "attack": "437",
+        "defense": "1136",
+        "release version": 231
+    },
+    {
+        "name": "린네",
+        "element": "회절",
+        "rarity": 5,
+        "hp": "12237",
+        "attack": "375",
+        "defense": "1197",
+        "release version": 301
+    },
+    {
+        "name": "루크·헤르센",
+        "element": "회절",
+        "rarity": 5,
+        "hp": "10300",
+        "attack": "462",
+        "defense": "1112",
+        "release version": 312
+    },
+    {
+        "name": "루시",
+        "element": "회절",
+        "rarity": 5,
+        "hp": "11025",
+        "attack": "425",
+        "defense": "1148",
+        "release version": 341
+    },
+    {
+        "name": "방랑자·인멸",
+        "element": "인멸",
+        "rarity": 5,
+        "hp": "10825",
+        "attack": "412",
+        "defense": "1258",
+        "release version": 101
+    },
+    {
+        "name": "단근",
+        "element": "인멸",
+        "rarity": 4,
+        "hp": "9437",
+        "attack": "262",
+        "defense": "1148",
+        "release version": 101
+    },
+    {
+        "name": "도기",
+        "element": "인멸",
+        "rarity": 4,
+        "hp": "8950",
+        "attack": "225",
+        "defense": "1564",
+        "release version": 101
+    },
+    {
+        "name": "카멜리아",
+        "element": "인멸",
+        "rarity": 5,
+        "hp": "10325",
+        "attack": "450",
+        "defense": "1161",
+        "release version": 141
+    },
+    {
+        "name": "로코코",
+        "element": "인멸",
+        "rarity": 5,
+        "hp": "12250",
+        "attack": "375",
+        "defense": "1197",
+        "release version": 202
+    },
+    {
+        "name": "칸타렐라",
+        "element": "인멸",
+        "rarity": 5,
+        "hp": "11600",
+        "attack": "400",
+        "defense": "1100",
+        "release version": 221
+    },
+    {
+        "name": "플로로",
+        "element": "인멸",
+        "rarity": 5,
+        "hp": "10775",
+        "attack": "437",
+        "defense": "1136",
+        "release version": 251
+    },
+    {
+        "name": "치사",
+        "element": "인멸",
+        "rarity": 5,
+        "hp": "10775",
+        "attack": "437",
+        "defense": "1136",
+        "release version": 281
+    }
+]

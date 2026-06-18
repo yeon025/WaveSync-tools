@@ -1,0 +1,176 @@
+[
+    {
+        "weapon_name": "천년의 회류",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "공명 효율",
+        "refine_value": "12.8%/16%/19.2%/22.4%/25.6%"
+    },
+    {
+        "weapon_name": "레이저 변형",
+        "attack_value": "587",
+        "main_type": "공명 효율",
+        "main_value": "38.8%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%%"
+    },
+    {
+        "weapon_name": "솟아오르는 화염",
+        "attack_value": "587",
+        "main_type": "크리티컬 피해",
+        "main_value": "48.6%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "날카로운 봄",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "흔들리지 않는 용기",
+        "attack_value": "412",
+        "main_type": "공명 효율",
+        "main_value": "77%",
+        "refine_type": "크리티컬",
+        "refine_value": "8%/10%/12%/14%/16%"
+    },
+    {
+        "weapon_name": "숙명에 맞서는 관",
+        "attack_value": "412",
+        "main_type": "HP",
+        "main_value": "72.2%",
+        "refine_type": "HP",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "푸른 의지",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "영원한 샛별",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "전체 속성 피해 보너스",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "서린 불꽃",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "혈맹의 약속",
+        "attack_value": "587",
+        "main_type": "공명 효율",
+        "main_value": "38.8%"
+    },
+    {
+        "weapon_name": "야귀의 신념",
+        "attack_value": "413",
+        "main_type": "공격력",
+        "main_value": "30.4%"
+    },
+    {
+        "weapon_name": "행진의 서곡",
+        "attack_value": "337",
+        "main_type": "공명 효율",
+        "main_value": "51.8%"
+    },
+    {
+        "weapon_name": "상승의 서녘",
+        "attack_value": "413",
+        "main_type": "공격력",
+        "main_value": "30.4%"
+    },
+    {
+        "weapon_name": "영원의 붕괴",
+        "attack_value": "463",
+        "main_type": "공격력",
+        "main_value": "18.2%"
+    },
+    {
+        "weapon_name": "천공의 광경",
+        "attack_value": "388",
+        "main_type": "공격력",
+        "main_value": "36.5%"
+    },
+    {
+        "weapon_name": "예리한 날개깃",
+        "attack_value": "412",
+        "main_type": "크리티컬",
+        "main_value": "20.2%"
+    },
+    {
+        "weapon_name": "18형 직검 · 순간의 칼빛",
+        "attack_value": "388",
+        "main_type": "공격력",
+        "main_value": "36.5%"
+    },
+    {
+        "weapon_name": "풍류의 우화시",
+        "attack_value": "462",
+        "main_type": "공격력",
+        "main_value": "18.2%"
+    },
+    {
+        "weapon_name": "마음의 닻",
+        "attack_value": "462",
+        "main_type": "공격력",
+        "main_value": "18.2%"
+    },
+    {
+        "weapon_name": "흑야의 직검 · 흑뢰",
+        "attack_value": "325",
+        "main_type": "공격력",
+        "main_value": "24.3%"
+    },
+    {
+        "weapon_name": "수행자의 직검 · 행적",
+        "attack_value": "300",
+        "main_type": "공명 효율",
+        "main_value": "32.4%"
+    },
+    {
+        "weapon_name": "원능의 직검 · 견습II",
+        "attack_value": "325",
+        "main_type": "공격력",
+        "main_value": "24.3%"
+    },
+    {
+        "weapon_name": "수호자의 직검 · 기민",
+        "attack_value": "300",
+        "main_type": "HP",
+        "main_value": "30.4%",
+        "refine_type": "공명 스킬 피해 보너스",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "태초의 직검",
+        "attack_value": "275",
+        "main_type": "공격력",
+        "main_value": "14.8%",
+        "refine_type": "공격력",
+        "refine_value": "5%/6.25%/7.5%/8.75%/10%"
+    },
+    {
+        "weapon_name": "견습용 직검",
+        "attack_value": "250",
+        "main_type": "공격력",
+        "main_value": "11.5%",
+        "refine_type": "공격력",
+        "refine_value": "4%/5%/6%/7%/8%"
+    }
+]

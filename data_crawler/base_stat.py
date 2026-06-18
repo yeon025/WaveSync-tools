@@ -124,7 +124,7 @@ def main():
         except Exception as e:
             print(f"[실패] {name}: {e}")
 
-    with open("datas/character_stats.json", "w", encoding="utf-8") as f:
+    with open("json/character_stats.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
     print(f"{len(results)}개 저장 완료")

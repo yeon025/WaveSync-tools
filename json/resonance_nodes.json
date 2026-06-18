@@ -1,0 +1,479 @@
+[
+    {
+        "name": "설지",
+        "outer_node_type": "치료 효과 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "HP",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "산화",
+        "outer_node_type": "응결 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "능양",
+        "outer_node_type": "응결 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "절지",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "유호",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "카를로타",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "히유키",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "루실라",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "치샤",
+        "outer_node_type": "용융 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "모르테피",
+        "outer_node_type": "용융 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "앙코",
+        "outer_node_type": "용융 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "장리",
+        "outer_node_type": "크리티컬 확률",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "브렌트",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "루파",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "갈브레나",
+        "outer_node_type": "크리티컬 피해",
+        "outer_top_node_value": "5.60%",
+        "outer_middle_node_value": "2.40%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "모니에",
+        "outer_node_type": "치료 효과 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "방어력",
+        "inner_top_node_value": "5.32%",
+        "inner_middle_node_value": "2.28%"
+    },
+    {
+        "name": "에이메스",
+        "outer_node_type": "크티리컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "데니아",
+        "outer_node_type": "크리티컬 피해",
+        "outer_top_node_value": "5.60%",
+        "outer_middle_node_value": "2.40%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "연무",
+        "outer_node_type": "전도 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "방어력",
+        "inner_top_node_value": "5.32%",
+        "inner_middle_node_value": "2.28%"
+    },
+    {
+        "name": "카카루",
+        "outer_node_type": "크리티컬 피해",
+        "outer_top_node_value": "5.60%",
+        "outer_middle_node_value": "2.40%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "음림",
+        "outer_node_type": "크리티컬 확률",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "상리요",
+        "outer_node_type": "크리티컬 피해",
+        "outer_top_node_value": "5.60%",
+        "outer_middle_node_value": "2.40%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "루미",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "아우구스타",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "복링",
+        "outer_node_type": "치료 효과 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "레베카",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "방랑자·기류",
+        "outer_node_type": "치료 효과 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "양양",
+        "outer_node_type": "기류 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "알토",
+        "outer_node_type": "기류 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "감심",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "기염",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "샤콘",
+        "outer_node_type": "크리티컬 피해",
+        "outer_top_node_value": "5.60%",
+        "outer_middle_node_value": "2.40%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "카르티시아",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "HP",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "유노",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "구원",
+        "outer_node_type": "크티리컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "시그리카",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "방랑자·회절",
+        "outer_node_type": "회절 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "벨리나",
+        "outer_node_type": "치료 효과 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "금희",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "파수인",
+        "outer_node_type": "치료 효과 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "HP",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "페비",
+        "outer_node_type": "크리티컬 피해",
+        "outer_top_node_value": "5.60%",
+        "outer_middle_node_value": "2.40%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "젠니",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "린네",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "루크·헤르센",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "루시",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "방랑자·인멸",
+        "outer_node_type": "인멸 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "단근",
+        "outer_node_type": "인멸 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "도기",
+        "outer_node_type": "인멸 피해 보너스",
+        "outer_top_node_value": "4.20%",
+        "outer_middle_node_value": "1.80%",
+        "inner_node_type": "방어력",
+        "inner_top_node_value": "5.32%",
+        "inner_middle_node_value": "2.28%"
+    },
+    {
+        "name": "카멜리아",
+        "outer_node_type": "크리티컬 피해",
+        "outer_top_node_value": "5.60%",
+        "outer_middle_node_value": "2.40%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "로코코",
+        "outer_node_type": "크리티컬 피해",
+        "outer_top_node_value": "5.60%",
+        "outer_middle_node_value": "2.40%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "칸타렐라",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "플로로",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    },
+    {
+        "name": "치사",
+        "outer_node_type": "크리티컬",
+        "outer_top_node_value": "2.80%",
+        "outer_middle_node_value": "1.20%",
+        "inner_node_type": "공격력",
+        "inner_top_node_value": "4.20%",
+        "inner_middle_node_value": "1.80%"
+    }
+]

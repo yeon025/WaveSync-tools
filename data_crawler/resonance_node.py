@@ -138,7 +138,7 @@ def main():
         except Exception as e:
             print(f"[오류] {name}: {e}")
 
-    with open("datas/resonance_nodes.json", "w", encoding="utf-8") as f:
+    with open("json/resonance_nodes.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
     print(f"{len(results)}개 저장 완료")

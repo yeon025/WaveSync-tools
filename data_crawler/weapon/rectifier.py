@@ -60,7 +60,7 @@ for tbody in soup.find_all("tbody"):
 
 
 
-with open("datas/rectifier.json", "w", encoding="utf-8") as f:
+with open("json/weapon/rectifier.json", "w", encoding="utf-8") as f:
     json.dump(
         weapons,
         f,

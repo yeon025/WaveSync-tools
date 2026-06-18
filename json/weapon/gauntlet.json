@@ -1,0 +1,156 @@
+[
+    {
+        "weapon_name": "물결의 파동",
+        "attack_value": "587",
+        "main_type": "공격력",
+        "main_value": "36.4%",
+        "refine_type": "공명 효율",
+        "refine_value": "12.8%/16%/19.2%/22.4%/25.6%"
+    },
+    {
+        "weapon_name": "격동의 조력",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%%"
+    },
+    {
+        "weapon_name": "팔방의 천추",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "전체 속성 피해 보너스",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "희비극",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "불빛의 심판",
+        "attack_value": "587",
+        "main_type": "크리티컬 피해",
+        "main_value": "48.6%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "세상 만물의 진리",
+        "attack_value": "500",
+        "main_type": "크리티컬",
+        "main_value": "36.0%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "한낮의 의지",
+        "attack_value": "587",
+        "main_type": "크리티컬",
+        "main_value": "24.3%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "솔스원의 해석",
+        "attack_value": "587",
+        "main_type": "크리티컬 피해",
+        "main_value": "48.6%",
+        "refine_type": "공격력",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "전우의 의리",
+        "attack_value": "337",
+        "main_type": "방어력",
+        "main_value": "61.5%"
+    },
+    {
+        "weapon_name": "바람의 악센트",
+        "attack_value": "337",
+        "main_type": "공명 효율",
+        "main_value": "51.8%"
+    },
+    {
+        "weapon_name": "천공의 역행",
+        "attack_value": "412",
+        "main_type": "공격력",
+        "main_value": "30.3%"
+    },
+    {
+        "weapon_name": "천상의 나선",
+        "attack_value": "463",
+        "main_type": "공격력",
+        "main_value": "18.2%"
+    },
+    {
+        "weapon_name": "황금 권갑",
+        "attack_value": "412",
+        "main_type": "크리티컬",
+        "main_value": "20.2%"
+    },
+    {
+        "weapon_name": "거침없는 비상",
+        "attack_value": "412",
+        "main_type": "크리티컬 피해",
+        "main_value": "40.5%"
+    },
+    {
+        "weapon_name": "21형 권갑 · 아이언 팬텀",
+        "attack_value": "387",
+        "main_type": "공명 효율",
+        "main_value": "38.8%"
+    },
+    {
+        "weapon_name": "만취의 영웅지",
+        "attack_value": "462",
+        "main_type": "공격력",
+        "main_value": "18.2%"
+    },
+    {
+        "weapon_name": "흑야의 권갑 · 흑빛",
+        "attack_value": "325",
+        "main_type": "공격력",
+        "main_value": "24.3%"
+    },
+    {
+        "weapon_name": "수행자의 권갑 · 파괴",
+        "attack_value": "325",
+        "main_type": "방어력",
+        "main_value": "30.8%"
+    },
+    {
+        "weapon_name": "원능의 권갑 · 견습IV",
+        "attack_value": "300",
+        "main_type": "크리티컬 피해",
+        "main_value": "40.5%"
+    },
+    {
+        "weapon_name": "수호자의 권갑 · 강력",
+        "attack_value": "300",
+        "main_type": "방어력",
+        "main_value": "38.5%",
+        "refine_type": "공명 해방 피해 보너스",
+        "refine_value": "12%/15%/18%/21%/24%"
+    },
+    {
+        "weapon_name": "태초의 권갑",
+        "attack_value": "275",
+        "main_type": "공격력",
+        "main_value": "14.8%",
+        "refine_type": "공격력",
+        "refine_value": "5%/6.25%/7.5%/8.75%/10%"
+    },
+    {
+        "weapon_name": "견습용 권갑",
+        "attack_value": "250",
+        "main_type": "공격력",
+        "main_value": "11.5%",
+        "refine_type": "공격력",
+        "refine_value": "4%/5%/6%/7%/8%"
+    }
+]
