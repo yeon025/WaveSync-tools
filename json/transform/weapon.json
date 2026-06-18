@@ -5,8 +5,12 @@
         "main_type": "공격력",
         "main_value": "36.4%",
         "refine_type": "공명 효율",
-        "refine_value": "12.8%/16%/19.2%/22.4%/25.6%",
-        "weapon_image": "weapon-images/푸른물결의 빛.png"
+        "weapon_image": "weapon-images/푸른물결의 빛.png",
+        "refine_1_value": "12.8%",
+        "refine_2_value": "16%",
+        "refine_3_value": "19.2%",
+        "refine_4_value": "22.4%",
+        "refine_5_value": "25.6%"
     },
     {
         "weapon_name": "에너지 절단",
@@ -14,8 +18,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "48.6%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/에너지 절단.png"
+        "weapon_image": "weapon-images/에너지 절단.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "청룡의 천장",
@@ -23,8 +31,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "48.6%",
         "refine_type": "전체 속성 피해 보너스",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/청룡의 천장.png"
+        "weapon_image": "weapon-images/청룡의 천장.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "태평성대",
@@ -32,8 +44,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "전체 속성 피해 보너스",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/태평성대.png"
+        "weapon_image": "weapon-images/태평성대.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "불길",
@@ -41,8 +57,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "48.6%",
         "refine_type": "공격력이",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/불길.png"
+        "weapon_image": "weapon-images/불길.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "천둥벼락을 다스리는 권능",
@@ -50,8 +70,12 @@
         "main_type": "크리티컬",
         "main_value": "12.1%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/천둥벼락을 다스리는 권능.png"
+        "weapon_image": "weapon-images/천둥벼락을 다스리는 권능.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "쿠모키리(曇斬)",
@@ -59,8 +83,12 @@
         "main_type": "크리티컬",
         "main_value": "36.0%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/쿠모키리(曇斬).png"
+        "weapon_image": "weapon-images/쿠모키리(曇斬).png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "별하늘 연산 측정기",
@@ -68,8 +96,12 @@
         "main_type": "공명 효율",
         "main_value": "77.0%",
         "refine_type": "방어력",
-        "refine_value": "16%/20%/24%/28%/32%",
-        "weapon_image": "weapon-images/별하늘 연산 측정기.png"
+        "weapon_image": "weapon-images/별하늘 연산 측정기.png",
+        "refine_1_value": "16%",
+        "refine_2_value": "20%",
+        "refine_3_value": "24%",
+        "refine_4_value": "28%",
+        "refine_5_value": "32%"
     },
     {
         "weapon_name": "장야의 불빛",
@@ -154,8 +186,12 @@
         "main_type": "공격력",
         "main_value": "24.3%",
         "refine_type": "일반 공격과 강공격 피해 보너스",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/수호자의 대검 · 근성.png"
+        "weapon_image": "weapon-images/수호자의 대검 · 근성.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "천상의 음률",
@@ -170,8 +206,12 @@
         "main_type": "공격력",
         "main_value": "14.8%",
         "refine_type": "공격력",
-        "refine_value": "5%/6.25%/7.5%/8.75%/10%",
-        "weapon_image": "weapon-images/태초의 대검.png"
+        "weapon_image": "weapon-images/태초의 대검.png",
+        "refine_1_value": "5%",
+        "refine_2_value": "6.25%",
+        "refine_3_value": "7.5%",
+        "refine_4_value": "8.75%",
+        "refine_5_value": "10%"
     },
     {
         "weapon_name": "견습용 대검",
@@ -179,8 +219,12 @@
         "main_type": "공격력",
         "main_value": "11.5%",
         "refine_type": "공격력",
-        "refine_value": "4%/5%/6%/7%/8%",
-        "weapon_image": "weapon-images/견습용 대검.png"
+        "weapon_image": "weapon-images/견습용 대검.png",
+        "refine_1_value": "4%",
+        "refine_2_value": "5%",
+        "refine_3_value": "6%",
+        "refine_4_value": "7%",
+        "refine_5_value": "8%"
     },
     {
         "weapon_name": "물결의 파동",
@@ -188,8 +232,12 @@
         "main_type": "공격력",
         "main_value": "36.4%",
         "refine_type": "공명 효율",
-        "refine_value": "12.8%/16%/19.2%/22.4%/25.6%",
-        "weapon_image": "weapon-images/물결의 파동.png"
+        "weapon_image": "weapon-images/물결의 파동.png",
+        "refine_1_value": "12.8%",
+        "refine_2_value": "16%",
+        "refine_3_value": "19.2%",
+        "refine_4_value": "22.4%",
+        "refine_5_value": "25.6%"
     },
     {
         "weapon_name": "격동의 조력",
@@ -197,8 +245,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%%",
-        "weapon_image": "weapon-images/격동의 조력.png"
+        "weapon_image": "weapon-images/격동의 조력.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%%"
     },
     {
         "weapon_name": "팔방의 천추",
@@ -206,8 +258,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "전체 속성 피해 보너스",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/팔방의 천추.png"
+        "weapon_image": "weapon-images/팔방의 천추.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "희비극",
@@ -215,8 +271,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/희비극.png"
+        "weapon_image": "weapon-images/희비극.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "불빛의 심판",
@@ -224,8 +284,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "48.6%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/불빛의 심판.png"
+        "weapon_image": "weapon-images/불빛의 심판.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "세상 만물의 진리",
@@ -233,8 +297,12 @@
         "main_type": "크리티컬",
         "main_value": "36.0%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/세상 만물의 진리.png"
+        "weapon_image": "weapon-images/세상 만물의 진리.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "한낮의 의지",
@@ -242,8 +310,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/한낮의 의지.png"
+        "weapon_image": "weapon-images/한낮의 의지.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "솔스원의 해석",
@@ -251,8 +323,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "48.6%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/솔스원의 해석.png"
+        "weapon_image": "weapon-images/솔스원의 해석.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "전우의 의리",
@@ -337,8 +413,12 @@
         "main_type": "방어력",
         "main_value": "38.5%",
         "refine_type": "공명 해방 피해 보너스",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/수호자의 권갑 · 강력.png"
+        "weapon_image": "weapon-images/수호자의 권갑 · 강력.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "태초의 권갑",
@@ -346,8 +426,12 @@
         "main_type": "공격력",
         "main_value": "14.8%",
         "refine_type": "공격력",
-        "refine_value": "5%/6.25%/7.5%/8.75%/10%",
-        "weapon_image": "weapon-images/태초의 권갑.png"
+        "weapon_image": "weapon-images/태초의 권갑.png",
+        "refine_1_value": "5%",
+        "refine_2_value": "6.25%",
+        "refine_3_value": "7.5%",
+        "refine_4_value": "8.75%",
+        "refine_5_value": "10%"
     },
     {
         "weapon_name": "견습용 권갑",
@@ -355,8 +439,12 @@
         "main_type": "공격력",
         "main_value": "11.5%",
         "refine_type": "공격력",
-        "refine_value": "4%/5%/6%/7%/8%",
-        "weapon_image": "weapon-images/견습용 권갑.png"
+        "weapon_image": "weapon-images/견습용 권갑.png",
+        "refine_1_value": "4%",
+        "refine_2_value": "5%",
+        "refine_3_value": "6%",
+        "refine_4_value": "7%",
+        "refine_5_value": "8%"
     },
     {
         "weapon_name": "부동의 안개",
@@ -364,8 +452,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공명 효율",
-        "refine_value": "12.8%/16%/19.2%/22.4%/25.6%",
-        "weapon_image": "weapon-images/부동의 안개.png"
+        "weapon_image": "weapon-images/부동의 안개.png",
+        "refine_1_value": "12.8%",
+        "refine_2_value": "16%",
+        "refine_3_value": "19.2%",
+        "refine_4_value": "22.4%",
+        "refine_5_value": "25.6%"
     },
     {
         "weapon_name": "위상의 파동",
@@ -373,8 +465,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "48.6%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%%",
-        "weapon_image": "weapon-images/위상의 파동.png"
+        "weapon_image": "weapon-images/위상의 파동.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%%"
     },
     {
         "weapon_name": "죽음과 춤",
@@ -382,8 +478,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "72.0%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/죽음과 춤.png"
+        "weapon_image": "weapon-images/죽음과 춤.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "숲속의 아리아",
@@ -391,8 +491,12 @@
         "main_type": "크리티컬",
         "main_value": "36.0%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/숲속의 아리아.png"
+        "weapon_image": "weapon-images/숲속의 아리아.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "얽혀진 빛과 그림자",
@@ -400,8 +504,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "48.6%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/얽혀진 빛과 그림자.png"
+        "weapon_image": "weapon-images/얽혀진 빛과 그림자.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "스펙트럼 블래스터",
@@ -409,8 +517,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/스펙트럼 블래스터.png"
+        "weapon_image": "weapon-images/스펙트럼 블래스터.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "스펙트럴 트리거",
@@ -418,8 +530,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "48.6%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/스펙트럴 트리거.png"
+        "weapon_image": "weapon-images/스펙트럴 트리거.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "스컬 스래셔",
@@ -427,8 +543,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "72.0%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/스컬 스래셔.png"
+        "weapon_image": "weapon-images/스컬 스래셔.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "불멸의 성화",
@@ -512,8 +632,12 @@
         "main_type": "공격력",
         "main_value": "30.4%",
         "refine_type": "공명 스킬 피해 보너스",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/수호자의 권총 · 용맹.png"
+        "weapon_image": "weapon-images/수호자의 권총 · 용맹.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "태초의 권총",
@@ -521,8 +645,12 @@
         "main_type": "공격력",
         "main_value": "14.8%",
         "refine_type": "공격력",
-        "refine_value": "5%/6.25%/7.5%/8.75%/10%",
-        "weapon_image": "weapon-images/태초의 권총.png"
+        "weapon_image": "weapon-images/태초의 권총.png",
+        "refine_1_value": "5%",
+        "refine_2_value": "6.25%",
+        "refine_3_value": "7.5%",
+        "refine_4_value": "8.75%",
+        "refine_5_value": "10%"
     },
     {
         "weapon_name": "견습용 권총",
@@ -530,8 +658,12 @@
         "main_type": "공격력",
         "main_value": "11.5%",
         "refine_type": "공격력",
-        "refine_value": "4%/5%/6%/7%/8%",
-        "weapon_image": "weapon-images/견습용 권총.png"
+        "weapon_image": "weapon-images/견습용 권총.png",
+        "refine_1_value": "4%",
+        "refine_2_value": "5%",
+        "refine_3_value": "6%",
+        "refine_4_value": "7%",
+        "refine_5_value": "8%"
     },
     {
         "weapon_name": "파도의 기록",
@@ -539,8 +671,12 @@
         "main_type": "공격력",
         "main_value": "54.0%",
         "refine_type": "공명 효율",
-        "refine_value": "12.8%/16%/19.2%/22.4%/25.6%",
-        "weapon_image": "weapon-images/파도의 기록.png"
+        "weapon_image": "weapon-images/파도의 기록.png",
+        "refine_1_value": "12.8%",
+        "refine_2_value": "16%",
+        "refine_3_value": "19.2%",
+        "refine_4_value": "22.4%",
+        "refine_5_value": "25.6%"
     },
     {
         "weapon_name": "보손 관측기",
@@ -548,8 +684,12 @@
         "main_type": "공명 효율",
         "main_value": "38.8%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%%",
-        "weapon_image": "weapon-images/보손 관측기.png"
+        "weapon_image": "weapon-images/보손 관측기.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%%"
     },
     {
         "weapon_name": "꼭두각시의 손",
@@ -557,8 +697,12 @@
         "main_type": "크리티컬",
         "main_value": "36.0%",
         "refine_type": "전체 속성 피해 보너스",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/꼭두각시의 손.png"
+        "weapon_image": "weapon-images/꼭두각시의 손.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "옥수 비단",
@@ -566,8 +710,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "72%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/옥수 비단.png"
+        "weapon_image": "weapon-images/옥수 비단.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "뭇별의 교향곡",
@@ -575,8 +723,12 @@
         "main_type": "공명 효율",
         "main_value": "77%",
         "refine_type": "HP",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/뭇별의 교향곡.png"
+        "weapon_image": "weapon-images/뭇별의 교향곡.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "광휘의 찬송가",
@@ -584,8 +736,12 @@
         "main_type": "크리티컬",
         "main_value": "36.0%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/광휘의 찬송가.png"
+        "weapon_image": "weapon-images/광휘의 찬송가.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "바다의 속삭임",
@@ -593,8 +749,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "72.0%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/바다의 속삭임.png"
+        "weapon_image": "weapon-images/바다의 속삭임.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "잊혀진 피안의 슬픈 악장",
@@ -602,8 +762,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/잊혀진 피안의 슬픈 악장.png"
+        "weapon_image": "weapon-images/잊혀진 피안의 슬픈 악장.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "위조된 작은별",
@@ -611,8 +775,12 @@
         "main_type": "크리티컬",
         "main_value": "36.0%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/위조된 작은별.png"
+        "weapon_image": "weapon-images/위조된 작은별.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "프리즈 프레임",
@@ -620,8 +788,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/프리즈 프레임.png"
+        "weapon_image": "weapon-images/프리즈 프레임.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "금주의 수호",
@@ -720,8 +892,12 @@
         "main_type": "공격력",
         "main_value": "24.3%",
         "refine_type": "일반 공격과 강공격 피해 보너스",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/수호자의 증폭기 · 모략.png"
+        "weapon_image": "weapon-images/수호자의 증폭기 · 모략.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "태초의 증폭기",
@@ -729,8 +905,12 @@
         "main_type": "공격력",
         "main_value": "14.8%",
         "refine_type": "공격력",
-        "refine_value": "5%/6.25%/7.5%/8.75%/10%",
-        "weapon_image": "weapon-images/태초의 증폭기.png"
+        "weapon_image": "weapon-images/태초의 증폭기.png",
+        "refine_1_value": "5%",
+        "refine_2_value": "6.25%",
+        "refine_3_value": "7.5%",
+        "refine_4_value": "8.75%",
+        "refine_5_value": "10%"
     },
     {
         "weapon_name": "견습용 증폭기",
@@ -738,8 +918,12 @@
         "main_type": "공격력",
         "main_value": "11.5%",
         "refine_type": "공격력",
-        "refine_value": "4%/5%/6%/7%/8%",
-        "weapon_image": "weapon-images/견습용 증폭기.png"
+        "weapon_image": "weapon-images/견습용 증폭기.png",
+        "refine_1_value": "4%",
+        "refine_2_value": "5%",
+        "refine_3_value": "6%",
+        "refine_4_value": "7%",
+        "refine_5_value": "8%"
     },
     {
         "weapon_name": "천년의 회류",
@@ -747,8 +931,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공명 효율",
-        "refine_value": "12.8%/16%/19.2%/22.4%/25.6%",
-        "weapon_image": "weapon-images/천년의 회류.png"
+        "weapon_image": "weapon-images/천년의 회류.png",
+        "refine_1_value": "12.8%",
+        "refine_2_value": "16%",
+        "refine_3_value": "19.2%",
+        "refine_4_value": "22.4%",
+        "refine_5_value": "25.6%"
     },
     {
         "weapon_name": "레이저 변형",
@@ -756,8 +944,12 @@
         "main_type": "공명 효율",
         "main_value": "38.8%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%%",
-        "weapon_image": "weapon-images/레이저 변형.png"
+        "weapon_image": "weapon-images/레이저 변형.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%%"
     },
     {
         "weapon_name": "솟아오르는 화염",
@@ -765,8 +957,12 @@
         "main_type": "크리티컬 피해",
         "main_value": "48.6%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/솟아오르는 화염.png"
+        "weapon_image": "weapon-images/솟아오르는 화염.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "날카로운 봄",
@@ -774,8 +970,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/날카로운 봄.png"
+        "weapon_image": "weapon-images/날카로운 봄.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "흔들리지 않는 용기",
@@ -783,8 +983,12 @@
         "main_type": "공명 효율",
         "main_value": "77%",
         "refine_type": "크리티컬",
-        "refine_value": "8%/10%/12%/14%/16%",
-        "weapon_image": "weapon-images/흔들리지 않는 용기.png"
+        "weapon_image": "weapon-images/흔들리지 않는 용기.png",
+        "refine_1_value": "8%",
+        "refine_2_value": "10%",
+        "refine_3_value": "12%",
+        "refine_4_value": "14%",
+        "refine_5_value": "16%"
     },
     {
         "weapon_name": "숙명에 맞서는 관",
@@ -792,8 +996,12 @@
         "main_type": "HP",
         "main_value": "72.2%",
         "refine_type": "HP",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/숙명에 맞서는 관.png"
+        "weapon_image": "weapon-images/숙명에 맞서는 관.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "푸른 의지",
@@ -801,8 +1009,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/푸른 의지.png"
+        "weapon_image": "weapon-images/푸른 의지.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "영원한 샛별",
@@ -810,8 +1022,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "전체 속성 피해 보너스",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/영원한 샛별.png"
+        "weapon_image": "weapon-images/영원한 샛별.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "서린 불꽃",
@@ -819,8 +1035,12 @@
         "main_type": "크리티컬",
         "main_value": "24.3%",
         "refine_type": "공격력",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/서린 불꽃.png"
+        "weapon_image": "weapon-images/서린 불꽃.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "혈맹의 약속",
@@ -919,8 +1139,12 @@
         "main_type": "HP",
         "main_value": "30.4%",
         "refine_type": "공명 스킬 피해 보너스",
-        "refine_value": "12%/15%/18%/21%/24%",
-        "weapon_image": "weapon-images/수호자의 직검 · 기민.png"
+        "weapon_image": "weapon-images/수호자의 직검 · 기민.png",
+        "refine_1_value": "12%",
+        "refine_2_value": "15%",
+        "refine_3_value": "18%",
+        "refine_4_value": "21%",
+        "refine_5_value": "24%"
     },
     {
         "weapon_name": "태초의 직검",
@@ -928,8 +1152,12 @@
         "main_type": "공격력",
         "main_value": "14.8%",
         "refine_type": "공격력",
-        "refine_value": "5%/6.25%/7.5%/8.75%/10%",
-        "weapon_image": "weapon-images/태초의 직검.png"
+        "weapon_image": "weapon-images/태초의 직검.png",
+        "refine_1_value": "5%",
+        "refine_2_value": "6.25%",
+        "refine_3_value": "7.5%",
+        "refine_4_value": "8.75%",
+        "refine_5_value": "10%"
     },
     {
         "weapon_name": "견습용 직검",
@@ -937,7 +1165,11 @@
         "main_type": "공격력",
         "main_value": "11.5%",
         "refine_type": "공격력",
-        "refine_value": "4%/5%/6%/7%/8%",
-        "weapon_image": "weapon-images/견습용 직검.png"
+        "weapon_image": "weapon-images/견습용 직검.png",
+        "refine_1_value": "4%",
+        "refine_2_value": "5%",
+        "refine_3_value": "6%",
+        "refine_4_value": "7%",
+        "refine_5_value": "8%"
     }
 ]
