@@ -15,8 +15,8 @@ with open("resources/sql/weapon_master.sql", "w", encoding="utf-8") as f:
     for item in data:
         sql = (
             "INSERT INTO weapon_master "
-            "(weapon_name, attack_value, main_type, main_value, refine_type,\n"
-            "refine_1_value, refine_2_value, refine_3_value, refine_4_value, refine_5_value, weapon_image)\n"
+            "(name, attack_value, main_type, main_value, refine_type,\n"
+            "refine_1_value, refine_2_value, refine_3_value, refine_4_value, refine_5_value, image)\n"
             "VALUES ("
             f"'{item['weapon_name']}', "
             f"{item['attack_value']}, "
