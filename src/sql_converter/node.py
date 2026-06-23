@@ -31,10 +31,10 @@ STAT_MAP = {
 with open("resources/json/raw_json/resonance_nodes.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
-with open("resources/sql/resonator_node_master.sql", "w", encoding="utf-8") as f:
+with open("resources/sql/resonance_node_master.sql", "w", encoding="utf-8") as f:
     for item in data:
         sql = (
-            "INSERT INTO resonator_node_master ("
+            "INSERT INTO resonance_node_master ("
             "outer_node_type, outer_top_node_value, outer_middle_node_value, "
             "inner_node_type, inner_top_node_value, inner_middle_node_value, "
             "resonator_master_id"
@@ -52,4 +52,4 @@ with open("resources/sql/resonator_node_master.sql", "w", encoding="utf-8") as f
 
         f.write(sql)
 
-print("resonator_node.sql 생성 완료")
+print("resonance_node.sql 생성 완료")
