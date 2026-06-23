@@ -7,9 +7,9 @@ def sql_number(value):
 
 
 STAT_MAP = {
-    "HP": "hp",
-    "공격력": "attack",
-    "방어력": "defense",
+    "HP": "hp_percent",
+    "공격력": "attack_percent",
+    "방어력": "defense_percent",
     "공명 효율": "energy_regen",
     "크리티컬": "critical_rate",
     "크리티컬 확률": "critical_rate",
