@@ -145,7 +145,7 @@
     },
     {
         "name": "에이메스",
-        "outer_node_type": "크티리컬",
+        "outer_node_type": "크리티컬",
         "outer_top_node_value": "2.80%",
         "outer_middle_node_value": "1.20%",
         "inner_node_type": "공격력",
@@ -307,7 +307,7 @@
     },
     {
         "name": "구원",
-        "outer_node_type": "크티리컬",
+        "outer_node_type": "크리티컬",
         "outer_top_node_value": "2.80%",
         "outer_middle_node_value": "1.20%",
         "inner_node_type": "공격력",

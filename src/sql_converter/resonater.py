@@ -1,5 +1,15 @@
 import json
 
+
+ELEMENT_MAP = {
+    "응결": "glacio",
+    "용융": "fusion",
+    "전도": "conducto",
+    "기류": "aero",
+    "회절": "spectra",
+    "인멸": "havoc"
+}
+
 with open("resources/json/transform/resonator_stats.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
@@ -17,8 +27,10 @@ with open("resources/sql/resonator_master.sql", "w", encoding="utf-8") as f:
             "INSERT INTO resonator_master "
             "(name, element, rarity, hp, attack, defense, release_version, thumbnail_image, standing_image)\n"
             "VALUES ("
-            f"'{item['name']}', '{item['element']}', {item['rarity']}, "
-            f"{item['hp']}, {item['attack']}, {item['defense']}, {item['release version']},"
+            f"'{item['name']}', "
+            f"'{ELEMENT_MAP.get(item['element'], item['element'])}', " 
+            f"{item['rarity']}, "
+            f"{item['hp']}, {item['attack']}, {item['defense']}, {item['release version']}, "
             f"'{item['thumbnail image']}', {standing_image_sql});\n\n"
         )
 
