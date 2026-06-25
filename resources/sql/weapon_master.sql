@@ -76,7 +76,7 @@ VALUES ('원능의 대검 · 견습I', 300, 'DEFENSE_PERCENT', 38.5, NULL, NULL,
 
 INSERT INTO weapon_master (name, attack_value, main_type, main_value, refine_type,
 refine_1_value, refine_2_value, refine_3_value, refine_4_value, refine_5_value, image)
-VALUES ('수호자의 대검 · 근성', 325, 'ATTACK_PERCENT', 24.3, 'BASIC_ATTACK_DAMAGE_BONUS/HEAVY_ATTACK_DAMAGE_BONUS', 12, 15, 18, 21, 24, 'weapon-images/수호자의 대검 · 근성.png');
+VALUES ('수호자의 대검 · 근성', 325, 'ATTACK_PERCENT', 24.3, 'BASIC_AND_HEAVY_ATTACK_DAMAGE_BONUS', 12, 15, 18, 21, 24, 'weapon-images/수호자의 대검 · 근성.png');
 
 INSERT INTO weapon_master (name, attack_value, main_type, main_value, refine_type,
 refine_1_value, refine_2_value, refine_3_value, refine_4_value, refine_5_value, image)
@@ -360,7 +360,7 @@ VALUES ('원능의 증폭기 · 견습V', 300, 'HP_PERCENT', 30.4, NULL, NULL, N
 
 INSERT INTO weapon_master (name, attack_value, main_type, main_value, refine_type,
 refine_1_value, refine_2_value, refine_3_value, refine_4_value, refine_5_value, image)
-VALUES ('수호자의 증폭기 · 모략', 325, 'ATTACK_PERCENT', 24.3, 'BASIC_ATTACK_DAMAGE_BONUS/HEAVY_ATTACK_DAMAGE_BONUS', 12, 15, 18, 21, 24, 'weapon-images/수호자의 증폭기 · 모략.png');
+VALUES ('수호자의 증폭기 · 모략', 325, 'ATTACK_PERCENT', 24.3, 'BASIC_AND_HEAVY_ATTACK_DAMAGE_BONUS', 12, 15, 18, 21, 24, 'weapon-images/수호자의 증폭기 · 모략.png');
 
 INSERT INTO weapon_master (name, attack_value, main_type, main_value, refine_type,
 refine_1_value, refine_2_value, refine_3_value, refine_4_value, refine_5_value, image)

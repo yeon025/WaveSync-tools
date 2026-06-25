@@ -21,7 +21,7 @@ STAT_MAP = {
     "인멸 피해 보너스": "HAVOC_DAMAGE_BONUS",
     "치료 효과 보너스": "HEALING_BONUS",
     "전체 속성 피해 보너스": "ALL_ATTRIBUTE_DAMAGE_BONUS",
-    "일반 공격과 강공격 피해 보너스": "BASIC_ATTACK_DAMAGE_BONUS/HEAVY_ATTACK_DAMAGE_BONUS"
+    "일반 공격과 강공격 피해 보너스": "BASIC_AND_HEAVY_ATTACK_DAMAGE_BONUS"
 }
 
 
