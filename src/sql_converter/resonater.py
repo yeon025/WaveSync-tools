@@ -2,12 +2,12 @@ import json
 
 
 ELEMENT_MAP = {
-    "응결": "glacio",
-    "용융": "fusion",
-    "전도": "conducto",
-    "기류": "aero",
-    "회절": "spectra",
-    "인멸": "havoc"
+    "응결": "GLACIO",
+    "용융": "FUSION",
+    "전도": "CONDUCTO",
+    "기류": "AERO",
+    "회절": "SPECTRA",
+    "인멸": "HAVOC"
 }
 
 with open("resources/json/transform/resonator_stats.json", "r", encoding="utf-8") as f:

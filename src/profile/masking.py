@@ -1,5 +1,5 @@
 import cv2
-from src.profile.constant import IMAGE_PATH, RECTANGLES, CIRCLES
+from constant import IMAGE_PATH, RECTANGLES, CIRCLES
 
 
 

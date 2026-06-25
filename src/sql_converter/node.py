@@ -7,24 +7,24 @@ def sql_number(value):
 
 
 STAT_MAP = {
-    "HP": "hp_percent",
-    "공격력": "attack_percent",
-    "방어력": "defense_percent",
-    "공명 효율": "energy_regen",
-    "크리티컬": "critical_rate",
-    "크리티컬 확률": "critical_rate",
-    "크리티컬 피해": "critical_damage",
-    "공명 스킬 피해 보너스": "resonance_skill_damage_bonus",
-    "일반 공격 피해 보너스": "basic_attack_damage_bonus",
-    "강공격 피해 보너스": "heavy_attack_damage_bonus",
-    "공명 해방 피해 보너스": "resonance_liberation_damage_bonus",
-    "응결 피해 보너스": "glacio_damage_bonus",
-    "용융 피해 보너스": "fusion_damage_bonus",
-    "전도 피해 보너스": "conducto_damage_bonus",
-    "기류 피해 보너스": "aero_damage_bonus",
-    "회절 피해 보너스": "spectra_damage_bonus",
-    "인멸 피해 보너스": "havoc_damage_bonus",
-    "치료 효과 보너스": "healing_bonus"
+    "HP": "HP_PERCENT",
+    "공격력": "ATTACK_PERCENT",
+    "방어력": "DEFENSE_PERCENT",
+    "공명 효율": "ENERGY_REGEN",
+    "크리티컬": "CRITICAL_RATE",
+    "크리티컬 확률": "CRITICAL_RATE",
+    "크리티컬 피해": "CRITICAL_DAMAGE",
+    "공명 스킬 피해 보너스": "RESONANCE_SKILL_DAMAGE_BONUS",
+    "일반 공격 피해 보너스": "BASIC_ATTACK_DAMAGE_BONUS",
+    "강공격 피해 보너스": "HEAVY_ATTACK_DAMAGE_BONUS",
+    "공명 해방 피해 보너스": "RESONANCE_LIBERATION_DAMAGE_BONUS",
+    "응결 피해 보너스": "GLACIO_DAMAGE_BONUS",
+    "용융 피해 보너스": "FUSION_DAMAGE_BONUS",
+    "전도 피해 보너스": "CONDUCTO_DAMAGE_BONUS",
+    "기류 피해 보너스": "AERO_DAMAGE_BONUS",
+    "회절 피해 보너스": "SPECTRA_DAMAGE_BONUS",
+    "인멸 피해 보너스": "HAVOC_DAMAGE_BONUS",
+    "치료 효과 보너스": "HEALING_BONUS"
 }
 
 
