@@ -1,18 +1,24 @@
 import requests
 from bs4 import BeautifulSoup
 from pathlib import Path
-from io import BytesIO
-from PIL import Image
+from util import get_character_urls, save, find_name
 
 URL = "https://namu.wiki/w/%EB%AA%85%EC%A1%B0:%20%EC%9B%8C%EB%8D%94%EB%A7%81%20%EC%9B%A8%EC%9D%B4%EB%B8%8C/%EA%B3%B5%EB%AA%85%EC%9E%90"
+
+CHARACTER_LIST_URL = (
+    "https://namu.wiki/w/"
+    "%EB%AA%85%EC%A1%B0:%20%EC%9B%8C%EB%8D%94%EB%A7%81%20%EC%9B%A8%EC%9D%B4%EB%B8%8C/%EA%B3%B5%EB%AA%85%EC%9E%90"
+)
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
+seen = set()
 
-def download_character_thumbnails():
-    response = requests.get(URL, headers=HEADERS)
+
+def find_thumbnail_image(name, wiki_url):
+    response = requests.get(wiki_url, headers=HEADERS)
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "html.parser")
@@ -31,9 +37,7 @@ def download_character_thumbnails():
     save_dir = Path("resources/images/thumbnails")
     save_dir.mkdir(exist_ok=True)
 
-    characters = []
-    seen = set()
-
+    # 이미지 경로 가져오기
     for img in attribute_section.select('img[alt$="아이콘"]'):
 
         # noscript 내부 중복 제거
@@ -45,10 +49,7 @@ def download_character_thumbnails():
         if not alt.startswith("명조 "):
             continue
 
-        name = (
-            alt.replace("명조 ", "")
-               .replace(" 아이콘", "")
-        )
+        name = (alt.replace("명조 ", "").replace(" 아이콘", ""))
 
         if name in seen:
             continue
@@ -62,31 +63,26 @@ def download_character_thumbnails():
 
         if src.startswith("//"):
             src = "https:" + src
-
-        try:
-            image_response = requests.get(src, headers=HEADERS)
-            image_response.raise_for_status()
-
-            image = Image.open(BytesIO(image_response.content))
-
-            file_path = save_dir / f"{name}-thumbnail.png"
-
-            image.save(file_path, "PNG")
-
-            characters.append({
-                "name": name,
-                "image_url": src,
-                "file_path": str(file_path)
-            })
-
-            print(f"저장 완료: {file_path}")
-
-        except Exception as e:
-            print(f"{name} 저장 실패: {e}")
-
-    print(f"\n총 {len(characters)}개 다운로드 완료")
-    return characters
+            return src
 
 
 if __name__ == "__main__":
-    download_character_thumbnails()
+    character_urls = get_character_urls()
+
+    for name, url in character_urls.items():
+
+        wiki_url = character_urls.get(name)
+
+        if wiki_url is None:
+            print(f"[실패] {name}: 문서 URL 없음")
+            continue
+
+        try:
+            src = find_thumbnail_image(name, wiki_url)
+            name = find_name(wiki_url)
+
+            save_dir = Path("resources/images/thumbnails")
+            save(src, name, save_dir, "thumbnail")
+
+        except Exception as e:
+            print(f"[오류] {name}: {e}")

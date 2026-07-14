@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 from io import BytesIO
 from PIL import Image
+from PIL import Image
+from util import get_character_urls, save, find_name
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0"
@@ -20,49 +22,6 @@ STANDING_DIR.mkdir(parents=True, exist_ok=True)
 
 
 
-
-def get_character_urls():
-    response = requests.get(CHARACTER_LIST_URL, headers=HEADERS)
-    response.raise_for_status()
-
-    soup = BeautifulSoup(response.text, "html.parser")
-
-    summary = soup.find(
-        "summary",
-        string=lambda s: s and "속성별" in s
-    )
-
-    if summary is None:
-        raise ValueError("[ 속성별 ] 섹션을 찾을 수 없습니다.")
-
-    attribute_section = summary.find_parent("details")
-
-    character_urls = {}
-
-    for link in attribute_section.select("a[href^='/w/']"):
-
-        img = link.select_one("img[alt$='아이콘']")
-
-        if img is None:
-            continue
-
-        if img.find_parent("noscript"):
-            continue
-
-        name = (
-            img["alt"]
-            .replace("명조 ", "")
-            .replace(" 아이콘", "")
-        )
-
-        href = link.get("href")
-
-        if not href:
-            continue
-
-        character_urls[name] = "https://namu.wiki" + href
-
-    return character_urls
 
 
 def find_standing_image(section):
@@ -85,7 +44,7 @@ def find_standing_image(section):
     return None
 
 
-def download_standing_image(name, wiki_url):
+def make_standing_path(name, wiki_url):
 
     response = requests.get(wiki_url, headers=HEADERS)
     response.raise_for_status()
@@ -121,23 +80,12 @@ def download_standing_image(name, wiki_url):
 
     if src.startswith("//"):
         src = "https:" + src
-
-    img_response = requests.get(src, headers=HEADERS)
-    img_response.raise_for_status()
-
-    img = Image.open(BytesIO(img_response.content))
-
-    save_path = STANDING_DIR / f"{name}-standing.png"
-
-    img.save(save_path, "PNG")
-
-    print(f"[완료] {save_path}")
+        return src
 
 
 def main():
 
     character_urls = get_character_urls()
-
 
     for name, url in character_urls.items():
 
@@ -148,7 +96,11 @@ def main():
             continue
 
         try:
-            download_standing_image(name, url)
+            src = make_standing_path(name, wiki_url)
+            name = find_name(wiki_url)
+
+            save_dir = Path("resources/images/standings")
+            save(src, name, save_dir, "standing")
 
         except Exception as e:
             print(f"[오류] {name}: {e}")
