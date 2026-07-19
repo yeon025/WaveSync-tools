@@ -96,8 +96,8 @@ def download_weapon_image(weapon):
 
     img = Image.open(BytesIO(response.content))
 
-    save_path = SAVE_DIR / f'{weapon["name"]}.png'
-    img.save(save_path, "PNG")
+    save_path = SAVE_DIR / f'{weapon["name"]}.webp'
+    img.save(save_path, "WEBP")
 
     print(f"[완료] {save_path}")
 

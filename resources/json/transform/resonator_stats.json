@@ -7,8 +7,8 @@
     "attack": "212",
     "defense": "1002",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Baizhi-thumbnail.png",
-    "standing image": "resonator-standing-images/Baizhi-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Baizhi-thumbnail.webp",
+    "standing image": "resonator-standing-images/Baizhi-standing.webp"
   },
   {
     "name": "산화",
@@ -18,8 +18,8 @@
     "attack": "275",
     "defense": "941",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Sanhua-thumbnail.png",
-    "standing image": "resonator-standing-images/Sanhua-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Sanhua-thumbnail.webp",
+    "standing image": "resonator-standing-images/Sanhua-standing.webp"
   },
   {
     "name": "능양",
@@ -29,8 +29,7 @@
     "attack": "437",
     "defense": "1209",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Lingyang-thumbnail.png",
-    "standing image": "resonator-standing-images/Lingyang-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Lingyang-thumbnail.webp"
   },
   {
     "name": "절지",
@@ -40,8 +39,8 @@
     "attack": "375",
     "defense": "1197",
     "release version": 121,
-    "thumbnail image": "resonator-thumbnail-images/Zhezhi-thumbnail.png",
-    "standing image": "resonator-standing-images/Zhezhi-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Zhezhi-thumbnail.webp",
+    "standing image": "resonator-standing-images/Zhezhi-standing.webp"
   },
   {
     "name": "유호",
@@ -51,8 +50,8 @@
     "attack": "262",
     "defense": "1051",
     "release version": 132,
-    "thumbnail image": "resonator-thumbnail-images/Youhu-thumbnail.png",
-    "standing image": "resonator-standing-images/Youhu-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Youhu-thumbnail.webp",
+    "standing image": "resonator-standing-images/Youhu-standing.webp"
   },
   {
     "name": "카를로타",
@@ -62,8 +61,8 @@
     "attack": "462",
     "defense": "1197",
     "release version": 201,
-    "thumbnail image": "resonator-thumbnail-images/Carlotta-thumbnail.png",
-    "standing image": "resonator-standing-images/Carlotta-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Carlotta-thumbnail.webp",
+    "standing image": "resonator-standing-images/Carlotta-standing.webp"
   },
   {
     "name": "히유키",
@@ -73,8 +72,8 @@
     "attack": "462",
     "defense": "1112",
     "release version": 331,
-    "thumbnail image": "resonator-thumbnail-images/Hiyuki-thumbnail.png",
-    "standing image": "resonator-standing-images/Hiyuki-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Hiyuki-thumbnail.webp",
+    "standing image": "resonator-standing-images/Hiyuki-standing.webp"
   },
   {
     "name": "루실라",
@@ -84,8 +83,8 @@
     "attack": "375",
     "defense": "1197",
     "release version": 341,
-    "thumbnail image": "resonator-thumbnail-images/Lucilla-thumbnail.png",
-    "standing image": "resonator-standing-images/Lucilla-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Lucilla-thumbnail.webp",
+    "standing image": "resonator-standing-images/Lucilla-standing.webp"
   },
   {
     "name": "치샤",
@@ -95,8 +94,8 @@
     "attack": "300",
     "defense": "953",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Chixia-thumbnail.png",
-    "standing image": "resonator-standing-images/Chixia-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Chixia-thumbnail.webp",
+    "standing image": "resonator-standing-images/Chixia-standing.webp"
   },
   {
     "name": "모르테피",
@@ -106,8 +105,7 @@
     "attack": "250",
     "defense": "1136",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Mortefi-thumbnail.png",
-    "standing image": "resonator-standing-images/Mortefi-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Mortefi-thumbnail.webp"
   },
   {
     "name": "앙코",
@@ -117,8 +115,8 @@
     "attack": "425",
     "defense": "1246",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Encore-thumbnail.png",
-    "standing image": "resonator-standing-images/Encore-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Encore-thumbnail.webp",
+    "standing image": "resonator-standing-images/Encore-standing.webp"
   },
   {
     "name": "장리",
@@ -128,8 +126,8 @@
     "attack": "462",
     "defense": "1100",
     "release version": 112,
-    "thumbnail image": "resonator-thumbnail-images/Changli-thumbnail.png",
-    "standing image": "resonator-standing-images/Changli-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Changli-thumbnail.webp",
+    "standing image": "resonator-standing-images/Changli-standing.webp"
   },
   {
     "name": "브렌트",
@@ -139,8 +137,8 @@
     "attack": "375",
     "defense": "1307",
     "release version": 212,
-    "thumbnail image": "resonator-thumbnail-images/Brant-thumbnail.png",
-    "standing image": "resonator-standing-images/Brant-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Brant-thumbnail.webp",
+    "standing image": "resonator-standing-images/Brant-standing.webp"
   },
   {
     "name": "루파",
@@ -150,8 +148,8 @@
     "attack": "387",
     "defense": "1185",
     "release version": 242,
-    "thumbnail image": "resonator-thumbnail-images/Lupa-thumbnail.png",
-    "standing image": "resonator-standing-images/Lupa-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Lupa-thumbnail.webp",
+    "standing image": "resonator-standing-images/Lupa-standing.webp"
   },
   {
     "name": "갈브레나",
@@ -161,8 +159,8 @@
     "attack": "462",
     "defense": "1112",
     "release version": 271,
-    "thumbnail image": "resonator-thumbnail-images/Galbrena-thumbnail.png",
-    "standing image": "resonator-standing-images/Galbrena-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Galbrena-thumbnail.webp",
+    "standing image": "resonator-standing-images/Galbrena-standing.webp"
   },
   {
     "name": "모니에",
@@ -172,8 +170,8 @@
     "attack": "287",
     "defense": "1356",
     "release version": 302,
-    "thumbnail image": "resonator-thumbnail-images/Mornye-thumbnail.png",
-    "standing image": "resonator-standing-images/Mornye-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Mornye-thumbnail.webp",
+    "standing image": "resonator-standing-images/Mornye-standing.webp"
   },
   {
     "name": "에이메스",
@@ -183,8 +181,8 @@
     "attack": "425",
     "defense": "1148",
     "release version": 311,
-    "thumbnail image": "resonator-thumbnail-images/Aemeath-thumbnail.png",
-    "standing image": "resonator-standing-images/Aemeath-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Aemeath-thumbnail.webp",
+    "standing image": "resonator-standing-images/Aemeath-standing.webp"
   },
   {
     "name": "데니아",
@@ -194,8 +192,8 @@
     "attack": "425",
     "defense": "1148",
     "release version": 332,
-    "thumbnail image": "resonator-thumbnail-images/Denia-thumbnail.png",
-    "standing image": "resonator-standing-images/Denia-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Denia-thumbnail.webp",
+    "standing image": "resonator-standing-images/Denia-standing.webp"
   },
   {
     "name": "연무",
@@ -205,7 +203,7 @@
     "attack": "225",
     "defense": "1637",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Yuanwu-thumbnail.png"
+    "thumbnail image": "resonator-thumbnail-images/Yuanwu-thumbnail.webp"
   },
   {
     "name": "카카루",
@@ -215,8 +213,7 @@
     "attack": "437",
     "defense": "1185",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Calcharo-thumbnail.png",
-    "standing image": "resonator-standing-images/Calcharo-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Calcharo-thumbnail.webp"
   },
   {
     "name": "음림",
@@ -226,8 +223,8 @@
     "attack": "400",
     "defense": "1283",
     "release version": 102,
-    "thumbnail image": "resonator-thumbnail-images/Yinlin-thumbnail.png",
-    "standing image": "resonator-standing-images/Yinlin-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Yinlin-thumbnail.webp",
+    "standing image": "resonator-standing-images/Yinlin-standing.webp"
   },
   {
     "name": "상리요",
@@ -237,8 +234,8 @@
     "attack": "425",
     "defense": "1222",
     "release version": 122,
-    "thumbnail image": "resonator-thumbnail-images/Xiangli Yao-thumbnail.png",
-    "standing image": "resonator-standing-images/Xiangli Yao-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Xiangli Yao-thumbnail.webp",
+    "standing image": "resonator-standing-images/Xiangli Yao-standing.webp"
   },
   {
     "name": "루미",
@@ -248,8 +245,8 @@
     "attack": "337",
     "defense": "880",
     "release version": 142,
-    "thumbnail image": "resonator-thumbnail-images/LUMI-thumbnail.png",
-    "standing image": "resonator-standing-images/LUMI-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/LUMI-thumbnail.webp",
+    "standing image": "resonator-standing-images/LUMI-standing.webp"
   },
   {
     "name": "아우구스타",
@@ -259,8 +256,8 @@
     "attack": "462",
     "defense": "1112",
     "release version": 261,
-    "thumbnail image": "resonator-thumbnail-images/Augusta-thumbnail.png",
-    "standing image": "resonator-standing-images/Augusta-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Augusta-thumbnail.webp",
+    "standing image": "resonator-standing-images/Augusta-standing.webp"
   },
   {
     "name": "복링",
@@ -270,8 +267,8 @@
     "attack": "225",
     "defense": "1259",
     "release version": 282,
-    "thumbnail image": "resonator-thumbnail-images/Buling-thumbnail.png",
-    "standing image": "resonator-standing-images/Buling-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Buling-thumbnail.webp",
+    "standing image": "resonator-standing-images/Buling-standing.webp"
   },
   {
     "name": "레베카",
@@ -281,8 +278,8 @@
     "attack": "400",
     "defense": "1173",
     "release version": 340,
-    "thumbnail image": "resonator-thumbnail-images/Rebecca-thumbnail.png",
-    "standing image": "resonator-standing-images/Rebecca-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Rebecca-thumbnail.webp",
+    "standing image": "resonator-standing-images/Rebecca-standing.webp"
   },
   {
     "name": "방랑자·기류",
@@ -292,8 +289,8 @@
     "attack": "437",
     "defense": "1136",
     "release version": 222,
-    "thumbnail image": "resonator-thumbnail-images/Rover-thumbnail.png",
-    "standing image": "resonator-standing-images/Rover-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Rover-thumbnail.webp",
+    "standing image": "resonator-standing-images/Rover-standing.webp"
   },
   {
     "name": "양양",
@@ -303,8 +300,8 @@
     "attack": "250",
     "defense": "1099",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Yangyang-thumbnail.png",
-    "standing image": "resonator-standing-images/Yangyang-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Yangyang-thumbnail.webp",
+    "standing image": "resonator-standing-images/Yangyang-standing.webp"
   },
   {
     "name": "알토",
@@ -314,8 +311,8 @@
     "attack": "262",
     "defense": "1075",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Aalto-thumbnail.png",
-    "standing image": "resonator-standing-images/Aalto-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Aalto-thumbnail.webp",
+    "standing image": "resonator-standing-images/Aalto-standing.webp"
   },
   {
     "name": "감심",
@@ -325,8 +322,8 @@
     "attack": "337",
     "defense": "1124",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Jianxin-thumbnail.png",
-    "standing image": "resonator-standing-images/Jianxin-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Jianxin-thumbnail.webp",
+    "standing image": "resonator-standing-images/Jianxin-standing.webp"
   },
   {
     "name": "기염",
@@ -336,8 +333,8 @@
     "attack": "437",
     "defense": "1185",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Jiyan-thumbnail.png",
-    "standing image": "resonator-standing-images/Jiyan-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Jiyan-thumbnail.webp",
+    "standing image": "resonator-standing-images/Jiyan-standing.webp"
   },
   {
     "name": "샤콘",
@@ -347,8 +344,8 @@
     "attack": "375",
     "defense": "1197",
     "release version": 232,
-    "thumbnail image": "resonator-thumbnail-images/Ciaccona-thumbnail.png",
-    "standing image": "resonator-standing-images/Ciaccona-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Ciaccona-thumbnail.webp",
+    "standing image": "resonator-standing-images/Ciaccona-standing.webp"
   },
   {
     "name": "카르티시아",
@@ -358,8 +355,8 @@
     "attack": "312",
     "defense": "611",
     "release version": 241,
-    "thumbnail image": "resonator-thumbnail-images/Cartethyia-thumbnail.png",
-    "standing image": "resonator-standing-images/Cartethyia-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Cartethyia-thumbnail.webp",
+    "standing image": "resonator-standing-images/Cartethyia-standing.webp"
   },
   {
     "name": "유노",
@@ -369,8 +366,8 @@
     "attack": "450",
     "defense": "1124",
     "release version": 262,
-    "thumbnail image": "resonator-thumbnail-images/Iuno-thumbnail.png",
-    "standing image": "resonator-standing-images/Iuno-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Iuno-thumbnail.webp",
+    "standing image": "resonator-standing-images/Iuno-standing.webp"
   },
   {
     "name": "구원",
@@ -380,8 +377,8 @@
     "attack": "375",
     "defense": "1197",
     "release version": 272,
-    "thumbnail image": "resonator-thumbnail-images/Qiuyuan-thumbnail.png",
-    "standing image": "resonator-standing-images/Qiuyuan-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Qiuyuan-thumbnail.webp",
+    "standing image": "resonator-standing-images/Qiuyuan-standing.webp"
   },
   {
     "name": "시그리카",
@@ -391,8 +388,8 @@
     "attack": "437",
     "defense": "1136",
     "release version": 321,
-    "thumbnail image": "resonator-thumbnail-images/Sigrika-thumbnail.png",
-    "standing image": "resonator-standing-images/Sigrika-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Sigrika-thumbnail.webp",
+    "standing image": "resonator-standing-images/Sigrika-standing.webp"
   },
   {
     "name": "방랑자·회절",
@@ -402,8 +399,8 @@
     "attack": "375",
     "defense": "1368",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Rover-thumbnail.png",
-    "standing image": "resonator-standing-images/Rover-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Rover-thumbnail.webp",
+    "standing image": "resonator-standing-images/Rover-standing.webp"
   },
   {
     "name": "벨리나",
@@ -413,8 +410,8 @@
     "attack": "337",
     "defense": "1099",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Verina-thumbnail.png",
-    "standing image": "resonator-standing-images/Verina-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Verina-thumbnail.webp",
+    "standing image": "resonator-standing-images/Verina-standing.webp"
   },
   {
     "name": "금희",
@@ -424,8 +421,8 @@
     "attack": "412",
     "defense": "1258",
     "release version": 111,
-    "thumbnail image": "resonator-thumbnail-images/Jinhsi-thumbnail.png",
-    "standing image": "resonator-standing-images/Jinhsi-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Jinhsi-thumbnail.webp",
+    "standing image": "resonator-standing-images/Jinhsi-standing.webp"
   },
   {
     "name": "파수인",
@@ -435,8 +432,8 @@
     "attack": "287",
     "defense": "1099",
     "release version": 131,
-    "thumbnail image": "resonator-thumbnail-images/The Shorekeeper-thumbnail.png",
-    "standing image": "resonator-standing-images/The Shorekeeper-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/The Shorekeeper-thumbnail.webp",
+    "standing image": "resonator-standing-images/The Shorekeeper-standing.webp"
   },
   {
     "name": "페비",
@@ -446,8 +443,8 @@
     "attack": "412",
     "defense": "1258",
     "release version": 211,
-    "thumbnail image": "resonator-thumbnail-images/Phoebe-thumbnail.png",
-    "standing image": "resonator-standing-images/Phoebe-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Phoebe-thumbnail.webp",
+    "standing image": "resonator-standing-images/Phoebe-standing.webp"
   },
   {
     "name": "젠니",
@@ -457,8 +454,8 @@
     "attack": "437",
     "defense": "1136",
     "release version": 231,
-    "thumbnail image": "resonator-thumbnail-images/Zani-thumbnail.png",
-    "standing image": "resonator-standing-images/Zani-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Zani-thumbnail.webp",
+    "standing image": "resonator-standing-images/Zani-standing.webp"
   },
   {
     "name": "린네",
@@ -468,8 +465,8 @@
     "attack": "375",
     "defense": "1197",
     "release version": 301,
-    "thumbnail image": "resonator-thumbnail-images/Lynae-thumbnail.png",
-    "standing image": "resonator-standing-images/Lynae-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Lynae-thumbnail.webp",
+    "standing image": "resonator-standing-images/Lynae-standing.webp"
   },
   {
     "name": "루크·헤르센",
@@ -479,8 +476,8 @@
     "attack": "462",
     "defense": "1112",
     "release version": 312,
-    "thumbnail image": "resonator-thumbnail-images/Luuk Herssen-thumbnail.png",
-    "standing image": "resonator-standing-images/Luuk Herssen-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Luuk Herssen-thumbnail.webp",
+    "standing image": "resonator-standing-images/Luuk Herssen-standing.webp"
   },
   {
     "name": "루시",
@@ -490,8 +487,8 @@
     "attack": "425",
     "defense": "1148",
     "release version": 340,
-    "thumbnail image": "resonator-thumbnail-images/Lucy-thumbnail.png",
-    "standing image": "resonator-standing-images/Lucy-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Lucy-thumbnail.webp",
+    "standing image": "resonator-standing-images/Lucy-standing.webp"
   },
   {
     "name": "방랑자·인멸",
@@ -501,8 +498,8 @@
     "attack": "412",
     "defense": "1258",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Rover-thumbnail.png",
-    "standing image": "resonator-standing-images/Rover-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Rover-thumbnail.webp",
+    "standing image": "resonator-standing-images/Rover-standing.webp"
   },
   {
     "name": "단근",
@@ -512,8 +509,8 @@
     "attack": "262",
     "defense": "1148",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Danjin-thumbnail.png",
-    "standing image": "resonator-standing-images/Danjin-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Danjin-thumbnail.webp",
+    "standing image": "resonator-standing-images/Danjin-standing.webp"
   },
   {
     "name": "도기",
@@ -523,8 +520,8 @@
     "attack": "225",
     "defense": "1564",
     "release version": 101,
-    "thumbnail image": "resonator-thumbnail-images/Taoqi-thumbnail.png",
-    "standing image": "resonator-standing-images/Taoqi-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Taoqi-thumbnail.webp",
+    "standing image": "resonator-standing-images/Taoqi-standing.webp"
   },
   {
     "name": "카멜리아",
@@ -534,8 +531,8 @@
     "attack": "450",
     "defense": "1161",
     "release version": 141,
-    "thumbnail image": "resonator-thumbnail-images/Camellya-thumbnail.png",
-    "standing image": "resonator-standing-images/Camellya-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Camellya-thumbnail.webp",
+    "standing image": "resonator-standing-images/Camellya-standing.webp"
   },
   {
     "name": "로코코",
@@ -545,8 +542,8 @@
     "attack": "375",
     "defense": "1197",
     "release version": 202,
-    "thumbnail image": "resonator-thumbnail-images/Roccia-thumbnail.png",
-    "standing image": "resonator-standing-images/Roccia-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Roccia-thumbnail.webp",
+    "standing image": "resonator-standing-images/Roccia-standing.webp"
   },
   {
     "name": "칸타렐라",
@@ -556,8 +553,8 @@
     "attack": "400",
     "defense": "1100",
     "release version": 221,
-    "thumbnail image": "resonator-thumbnail-images/Cantarella-thumbnail.png",
-    "standing image": "resonator-standing-images/Cantarella-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Cantarella-thumbnail.webp",
+    "standing image": "resonator-standing-images/Cantarella-standing.webp"
   },
   {
     "name": "플로로",
@@ -567,8 +564,8 @@
     "attack": "437",
     "defense": "1136",
     "release version": 251,
-    "thumbnail image": "resonator-thumbnail-images/Phrolova-thumbnail.png",
-    "standing image": "resonator-standing-images/Phrolova-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Phrolova-thumbnail.webp",
+    "standing image": "resonator-standing-images/Phrolova-standing.webp"
   },
   {
     "name": "치사",
@@ -578,7 +575,7 @@
     "attack": "437",
     "defense": "1136",
     "release version": 281,
-    "thumbnail image": "resonator-thumbnail-images/Chisa-thumbnail.png",
-    "standing image": "resonator-standing-images/Chisa-standing.png"
+    "thumbnail image": "resonator-thumbnail-images/Chisa-thumbnail.webp",
+    "standing image": "resonator-standing-images/Chisa-standing.webp"
   }
 ]

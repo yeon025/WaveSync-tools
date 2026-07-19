@@ -10,13 +10,13 @@ with open(JSON_PATH, "r", encoding="utf-8") as f:
 
 # JSON 순서대로 이미지 이름 변경
 for idx, weapon in enumerate(weapons, start=1):
-    old_path = WEAPON_DIR / f"{weapon['weapon_name']}.png"
+    old_path = WEAPON_DIR / f"{weapon['weapon_name']}.webp"
 
     if not old_path.exists():
         print(f"이미지를 찾을 수 없습니다: {old_path.name}")
         continue
 
-    new_name = f"{idx}.png"
+    new_name = f"{idx}.webp"
     new_path = WEAPON_DIR / new_name
 
     old_path.rename(new_path)

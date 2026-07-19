@@ -84,9 +84,9 @@ def save(src, name, save_dir, type):
 
         image = Image.open(BytesIO(image_response.content))
 
-        file_path = save_dir / f"{name}-{type}.png"
+        file_path = save_dir / f"{name}-{type}.webp"
 
-        image.save(file_path, "PNG")
+        image.save(file_path, "WEBP")
 
         characters.append({
             "name": name,
