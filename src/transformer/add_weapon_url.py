@@ -1,14 +1,16 @@
 import json
+import shutil
 from pathlib import Path
 
 JSON_PATH = "resources/json/transform/weapon.json"
 WEAPON_DIR = Path("resources/images/weapons")
+NEW_WEAPON_DIR = Path("resources/images/new_weapons")
 
-# JSON 로드
+NEW_WEAPON_DIR.mkdir(parents=True, exist_ok=True)
+
 with open(JSON_PATH, "r", encoding="utf-8") as f:
     weapons = json.load(f)
 
-# JSON 순서대로 이미지 이름 변경
 for idx, weapon in enumerate(weapons, start=1):
     old_path = WEAPON_DIR / f"{weapon['weapon_name']}.webp"
 
@@ -17,15 +19,11 @@ for idx, weapon in enumerate(weapons, start=1):
         continue
 
     new_name = f"{idx}.webp"
-    new_path = WEAPON_DIR / new_name
+    new_path = NEW_WEAPON_DIR / new_name
 
-    old_path.rename(new_path)
+    shutil.copy2(old_path, new_path)  # rename -> copy2로 변경 (원본 유지)
 
-    # JSON에도 경로 저장
     weapon["weapon_image"] = f"weapon-images/{new_name}"
 
-# 저장
 with open(JSON_PATH, "w", encoding="utf-8") as f:
     json.dump(weapons, f, ensure_ascii=False, indent=4)
-
-print("완료")
