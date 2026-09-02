@@ -390,12 +390,6 @@
         "attack_value": "387",
         "main_type": "공명 효율",
         "main_value": "38.8",
-        "refine_type": "회피 또는 돌진 시, 공격력",
-        "refine_1_value": "8",
-        "refine_2_value": "10",
-        "refine_3_value": "12",
-        "refine_4_value": "14",
-        "refine_5_value": "16",
         "weapon_image": "weapon-images/39.webp"
     },
     {

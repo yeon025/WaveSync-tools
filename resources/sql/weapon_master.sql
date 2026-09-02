@@ -152,7 +152,7 @@ VALUES ('거침없는 비상', 412, 'critical_damage', 40.5, NULL, NULL, NULL, N
 
 INSERT INTO weapon_master (name, attack_value, main_type, main_value, refine_type,
 refine_1_value, refine_2_value, refine_3_value, refine_4_value, refine_5_value, image)
-VALUES ('21형 권갑 · 아이언 팬텀', 387, 'energy_regen', 38.8, '회피 또는 돌진 시, 공격력', 8, 10, 12, 14, 16, 'weapon-images/39.webp');
+VALUES ('21형 권갑 · 아이언 팬텀', 387, 'energy_regen', 38.8, NULL, NULL, NULL, NULL, NULL, NULL, 'weapon-images/39.webp');
 
 INSERT INTO weapon_master (name, attack_value, main_type, main_value, refine_type,
 refine_1_value, refine_2_value, refine_3_value, refine_4_value, refine_5_value, image)
