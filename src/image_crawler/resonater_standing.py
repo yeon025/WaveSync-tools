@@ -1,25 +1,18 @@
-import requests
-from bs4 import BeautifulSoup
 from pathlib import Path
-from io import BytesIO
-from PIL import Image
-from PIL import Image
-from util import get_character_urls, save, find_name
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
-
-CHARACTER_LIST_URL = (
-    "https://namu.wiki/w/"
-    "%EB%AA%85%EC%A1%B0:%20%EC%9B%8C%EB%8D%94%EB%A7%81%20%EC%9B%A8%EC%9D%B4%EB%B8%8C/%EA%B3%B5%EB%AA%85%EC%9E%90"
+from util import (
+    crawl_character_urls,
+    save,
+    find_name,
+    fetch_soup,
+    extract_img_src,
+    to_https,
 )
 
 
 STANDING_DIR = Path("resources/images/standings")
 
 STANDING_DIR.mkdir(parents=True, exist_ok=True)
-
 
 
 
@@ -31,7 +24,7 @@ def find_standing_image(section):
     """
 
     for img in section.select("img"):
-        src = img.get("data-src") or img.get("src")
+        src = extract_img_src(img)
 
         if not src:
             continue
@@ -44,19 +37,16 @@ def find_standing_image(section):
     return None
 
 
-def make_standing_path(name, wiki_url):
+def find_standing_url(wiki_url, name):
 
-    response = requests.get(wiki_url, headers=HEADERS)
-    response.raise_for_status()
-
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = fetch_soup(wiki_url)
 
     summary = None
 
     for s in soup.find_all("summary"):
-        text = s.get_text(strip=True)
+        title = s.get_text(strip=True)
 
-        if "스탠딩" in text:
+        if "스탠딩" in title:
             summary = s
             break
 
@@ -76,18 +66,18 @@ def make_standing_path(name, wiki_url):
         print(f"[실패] {name}: 이미지 없음")
         return
 
-    src = image.get("data-src") or image.get("src")
+    src = extract_img_src(image)
 
     if src.startswith("//"):
-        src = "https:" + src
-        return src
+        return to_https(src)
+
 
 
 def main():
 
-    character_urls = get_character_urls()
+    character_urls = crawl_character_urls()
 
-    for name, url in character_urls.items():
+    for name in character_urls:
 
         wiki_url = character_urls.get(name)
 
@@ -96,11 +86,10 @@ def main():
             continue
 
         try:
-            src = make_standing_path(name, wiki_url)
+            src = find_standing_url(wiki_url, name)
             name = find_name(wiki_url)
 
-            save_dir = Path("resources/images/standings")
-            save(src, name, save_dir, "standing")
+            save(src, f"{name}-standing", STANDING_DIR)
 
         except Exception as e:
             print(f"[오류] {name}: {e}")
