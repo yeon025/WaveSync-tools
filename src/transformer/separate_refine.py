@@ -16,5 +16,3 @@ for weapon in weapons:
 
 with open("resources/json/transform/weapon.json", "w", encoding="utf-8") as f:
     json.dump(weapons, f, ensure_ascii=False, indent=4)
-
-print("완료")

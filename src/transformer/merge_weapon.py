@@ -1,11 +1,11 @@
 import json
 
 files = [
-    "resources/json/raw_json/weapon/broadblade.json",
-    "resources/json/raw_json/weapon/gauntlet.json",
-    "resources/json/raw_json/weapon/pistols.json",
-    "resources/json/raw_json/weapon/rectifier.json",
-    "resources/json/raw_json/weapon/sword.json"
+    "resources/json/broadblade.json",
+    "resources/json/gauntlet.json",
+    "resources/json/pistols.json",
+    "resources/json/rectifier.json",
+    "resources/json/sword.json"
 ]
 
 merged = []
@@ -16,5 +16,3 @@ for file in files:
 
 with open("resources/json/transform/weapon.json", "w", encoding="utf-8") as f:
     json.dump(merged, f, ensure_ascii=False, indent=4)
-
-print("완료")
