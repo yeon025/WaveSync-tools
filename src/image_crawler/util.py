@@ -11,10 +11,6 @@ from io import BytesIO
 from PIL import Image
 
 
-# =============================================================================
-# 상수
-# =============================================================================
-
 CHARACTER_LIST_URL = (
     "https://namu.wiki/w/"
     "%EB%AA%85%EC%A1%B0:%20%EC%9B%8C%EB%8D%94%EB%A7%81%20%EC%9B%A8%EC%9D%B4%EB%B8%8C/%EA%B3%B5%EB%AA%85%EC%9E%90"
@@ -24,10 +20,12 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
+# "속성" 섹션에서 class="TrbsItZY" 카드로 찾은 링크 수가 이 값보다 적으면
+# (namu.wiki의 해시 class명은 배포마다 바뀌므로) class 매칭이 깨졌다고 보고
+# href="/w/..." 단독 매칭으로 폴백한다. 현재 공명자 수(40여 명)보다 훨씬
+# 낮게 잡은 안전 마진이다.
+MIN_ATTRIBUTE_LINKS = 20
 
-# =============================================================================
-# HTTP / 파싱
-# =============================================================================
 
 def fetch_soup(url: str) -> BeautifulSoup:
     """URL을 GET 요청하고 응답 HTML을 BeautifulSoup 객체로 파싱해서 반환한다."""
@@ -52,10 +50,6 @@ def find_attribute_section(soup: BeautifulSoup) -> Tag:
 
     return summary.find_parent("details")
 
-
-# =============================================================================
-# HTML 요소 헬퍼
-# =============================================================================
 
 def in_noscript(tag: Tag) -> bool:
     """태그가 <noscript> 내부에 있는지 여부. (스크립트 비활성화용 중복 이미지 판별)"""
@@ -85,33 +79,72 @@ def resonator_name_from_alt(alt: str) -> str:
     return alt.replace("명조 ", "").replace(" 아이콘", "")
 
 
-# =============================================================================
-# 공명자 문서 크롤링
-# =============================================================================
+def _find_attribute_heading(soup: BeautifulSoup) -> Tag | None:
+    """"3. 속성" 섹션의 <h2> 헤딩을 찾는다 (섹션 번호는 하드코딩하지 않고
+    id="속성" span, 없으면 id="s-3" 앵커로 폴백). 못 찾으면 None.
+
+    find_attribute_section()과 별개다 — 그쪽은 resonater_thumbnail.py가
+    여전히 쓰는 옛 [ 속성별 ] 구조 탐색이라 건드리지 않는다.
+    """
+    for heading in soup.find_all("h2"):
+        if heading.find("span", id="속성"):
+            return heading
+
+        if heading.find("a", id="s-3"):
+            return heading
+
+    return None
+
+
+def _resonator_links_in_section(heading: Tag) -> list[Tag]:
+    """heading 다음 <h2> 전까지 href="/w/..."인 <a>를 모은다. class="TrbsItZY"
+    카드를 우선하되, 해시 class명이 바뀌어 MIN_ATTRIBUTE_LINKS보다 적게
+    잡히면 class 조건 없이 href만으로 다시 모은 목록으로 폴백한다."""
+    links = []
+
+    for el in heading.find_all_next():
+        if el.name == "h2":
+            break
+
+        if el.name == "a" and (el.get("href") or "").startswith("/w/"):
+            links.append(el)
+
+    primary = [link for link in links if "TrbsItZY" in (link.get("class") or [])]
+
+    if len(primary) >= MIN_ATTRIBUTE_LINKS:
+        return primary
+
+    return links
+
 
 def crawl_character_urls() -> dict[str, str]:
-    """[ 속성별 ] 섹션에서 공명자 이름 -> 나무위키 문서 URL 딕셔너리를 만든다."""
+    """"3. 속성" 섹션에서 공명자 이름 -> 나무위키 문서 URL 딕셔너리를 만든다."""
     soup = fetch_soup(CHARACTER_LIST_URL)
 
-    attribute_section = find_attribute_section(soup)
+    heading = _find_attribute_heading(soup)
+
+    if heading is None:
+        raise ValueError("[ 속성 ] 섹션을 찾을 수 없습니다.")
 
     character_urls: dict[str, str] = {}
+    seen_hrefs = set()
 
-    for link in attribute_section.select("a[href^='/w/']"):
-
-        img = link.select_one("img[alt$='아이콘']")
-
-        if img is None:
-            continue
-
-        if in_noscript(img):
-            continue
-
-        name = resonator_name_from_alt(img["alt"])
+    for link in _resonator_links_in_section(heading):
 
         href = link.get("href")
 
-        if not href:
+        if not href or href in seen_hrefs:
+            continue
+
+        seen_hrefs.add(href)
+
+        name = link.get("title")
+
+        if not name:
+            strong = link.find("strong")
+            name = strong.get_text(strip=True) if strong else None
+
+        if not name:
             continue
 
         character_urls[name] = "https://namu.wiki" + href
@@ -129,10 +162,6 @@ def find_name(wiki_url: str) -> str:
 
     return english_name
 
-
-# =============================================================================
-# 이미지 다운로드 / 저장
-# =============================================================================
 
 def save(src: str, name: str, save_dir: Path) -> None:
     """이미지 URL을 내려받아 `{name}.webp`로 save_dir에 저장한다."""
