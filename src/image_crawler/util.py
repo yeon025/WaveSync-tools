@@ -163,9 +163,13 @@ def find_name(wiki_url: str) -> str:
     return english_name
 
 
-def save(src: str, name: str, save_dir: Path) -> None:
-    """이미지 URL을 내려받아 `{name}.webp`로 save_dir에 저장한다."""
+def save(src: str, name: str, save_dir: Path, verbose: bool = True) -> Path | Exception:
+    """이미지 URL을 내려받아 `{name}.webp`로 save_dir에 저장한다. 성공 시
+    저장된 Path, 실패 시 예외 객체를 반환한다. verbose=False면 자체 print를
+    생략한다(호출부가 따로 로깅할 때 중복 출력 방지용)."""
     save_dir.mkdir(exist_ok=True)
+
+    save_path = save_dir / f"{name}.webp"
 
     try:
         image_response = requests.get(src, headers=HEADERS)
@@ -173,11 +177,15 @@ def save(src: str, name: str, save_dir: Path) -> None:
 
         image = Image.open(BytesIO(image_response.content))
 
-        save_path = save_dir / f"{name}.webp"
-
         image.save(save_path, "WEBP")
 
-        print(f"저장 완료: {save_path}")
+        if verbose:
+            print(f"저장 완료: {save_path}")
+
+        return save_path
 
     except Exception as e:
-        print(f"{name} 저장 실패: {e}")
+        if verbose:
+            print(f"{name} 저장 실패: {e}")
+
+        return e
