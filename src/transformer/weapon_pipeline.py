@@ -1,15 +1,4 @@
-"""
-transformer 스크립트들을 순서대로 실행하는 러너.
-
-실행 순서:
-    1. merge_weapon.py
-    2. separate_refine.py
-    3. normalize_weapon_values.py
-    4. add_weapon_url.py
-
-각 스크립트는 subprocess로 실행되며, 하나라도 실패하면 즉시 중단하고
-에러 메시지를 출력한다.
-"""
+"""SCRIPTS를 순서대로 실행하고, 실패하면 즉시 중단한다."""
 
 import subprocess
 import sys

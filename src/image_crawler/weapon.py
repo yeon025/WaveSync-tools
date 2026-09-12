@@ -48,7 +48,6 @@ def crawl_weapons():
         for tr in trs:
             # 이미지 추출
             for img in tr.select("img"):
-                # noscript 내부 중복 제거
                 if in_noscript(img):
                     continue
 

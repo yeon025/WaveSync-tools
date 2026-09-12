@@ -1,24 +1,4 @@
-"""
-무기 데이터(JSON) 정제 스크립트.
-
-처리 내용:
-    1. "refine_type" 값 끝의 조사(은/는/이/가)를 제거
-       예: "공격력이" -> "공격력", "체력은" -> "체력"
-    2. "main_value", "refine_1_value" ~ "refine_5_value" 값의 "%" 문자를 제거
-       예: "12%" -> "12", "48.6%" -> "48.6"
-    3. (1)(2) 이후, "refine_type" 이 순수 스탯명이 아니라 발동 조건이 포함된
-       문장인 경우 해당 무기의 refine 관련 키를 모두 제거
-       예: "변주 스킬 발동 시, 자신의 공격력" + refine_value  ->  두 키 모두 삭제
-
-대상 파일:
-    기본값은 아래 INPUT_PATH 상수. 명령줄 인자로도 지정할 수 있다.
-
-        python src/transformer/normalize_weapon_values.py
-        python src/transformer/normalize_weapon_values.py path/to/weapon.json
-        python src/transformer/normalize_weapon_values.py path/to/weapon.json -o out.json
-
-    -o/--output 를 주지 않으면 원본 파일을 덮어쓴다.
-"""
+"""무기 JSON 정제: 조사 제거, % 제거, 조건절 refine 키 삭제."""
 
 import argparse
 import json

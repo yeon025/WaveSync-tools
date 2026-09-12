@@ -28,7 +28,6 @@ def find_thumbnail_url(wiki_url):
     # 이미지 경로 가져오기
     for img in attribute_section.select('img[alt$="아이콘"]'):
 
-        # noscript 내부 중복 제거
         if in_noscript(img):
             continue
 
