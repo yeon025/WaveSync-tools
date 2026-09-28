@@ -1,18 +1,9 @@
-"""data_crawler 공통 유틸리티.
-
-base_stat / resonance_node / weapon 크롤러에서 반복적으로 쓰이는
-상수, HTTP 요청/파싱, 공명자 문서 수집, 무기 능력치 파싱, JSON 저장 로직을 모아둔다.
-"""
-
 import json
 import re
 import requests
 from bs4 import BeautifulSoup
 
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
+HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 CHARACTER_LIST_URL = (
     "https://namu.wiki/w/"
@@ -36,7 +27,7 @@ def fetch_soup(url: str) -> BeautifulSoup:
 
 
 def _find_attribute_heading(soup: BeautifulSoup):
-    """"3. 속성" 섹션의 <h2> 헤딩을 찾는다 (섹션 번호는 하드코딩하지 않고
+    """ "3. 속성" 섹션의 <h2> 헤딩을 찾는다 (섹션 번호는 하드코딩하지 않고
     id="속성" span, 없으면 id="s-3" 앵커로 폴백). 못 찾으면 None."""
     for heading in soup.find_all("h2"):
         if heading.find("span", id="속성"):
@@ -49,7 +40,7 @@ def _find_attribute_heading(soup: BeautifulSoup):
 
 
 def crawl_character_urls() -> dict[str, str]:
-    """"3. 속성" 섹션 아래 속성별 표(이름 tr 다음 형제 tr에 링크)에서 공명자
+    """ "3. 속성" 섹션 아래 속성별 표(이름 tr 다음 형제 tr에 링크)에서 공명자
     이름 -> 나무위키 문서 URL 딕셔너리를 만든다. "방랑자"는 속성 구분과
     무관하게 문서 전체 등장 순서대로 전도/기류/회절/인멸로 구분한다."""
     rover_names = ["방랑자·전도", "방랑자·기류", "방랑자·회절", "방랑자·인멸"]
@@ -114,7 +105,7 @@ def crawl_character_urls() -> dict[str, str]:
             elif name.startswith("방랑자/"):
                 # 실제 title은 "방랑자/전도"처럼 "/"로 붙어 나온다.
                 # 표기를 다른 방랑자 변형과 동일하게 "·"로 통일한다.
-                name = "방랑자·" + name[len("방랑자/"):]
+                name = "방랑자·" + name[len("방랑자/") :]
 
             character_urls[name] = "https://namu.wiki" + href
 
@@ -136,9 +127,7 @@ def crawl_weapon_stats(url: str) -> list[dict]:
         # 무기명
         first_tr = trs[0]
 
-        title = first_tr.select_one(
-            'div[style*="border-left:5px solid"] > strong'
-        )
+        title = first_tr.select_one('div[style*="border-left:5px solid"] > strong')
 
         if not title:
             continue
@@ -155,14 +144,16 @@ def crawl_weapon_stats(url: str) -> list[dict]:
         refine_type = texts[5]
         refine_value = texts[6]
 
-        weapons.append({
-            "weapon_name": weapon_name,
-            "attack_value": stat1_value,
-            "main_type": stat2_name,
-            "main_value": stat2_value,
-            "refine_type": refine_type,
-            "refine_value": refine_value
-        })
+        weapons.append(
+            {
+                "weapon_name": weapon_name,
+                "attack_value": stat1_value,
+                "main_type": stat2_name,
+                "main_value": stat2_value,
+                "refine_type": refine_type,
+                "refine_value": refine_value,
+            }
+        )
 
     return weapons
 
