@@ -1,30 +1,23 @@
-"""image_crawler 공통 유틸리티.
-
-resonater_thumbnail / resonater_standing / weapon 크롤러에서 반복적으로
-쓰이는 상수, HTTP 요청/파싱, HTML 요소 헬퍼, 이미지 다운로드/저장 로직을 모아둔다.
-"""
-
 import requests
 from bs4 import BeautifulSoup, Tag
 from pathlib import Path
 from io import BytesIO
 from PIL import Image
-
+import re
 
 CHARACTER_LIST_URL = (
     "https://namu.wiki/w/"
     "%EB%AA%85%EC%A1%B0:%20%EC%9B%8C%EB%8D%94%EB%A7%81%20%EC%9B%A8%EC%9D%B4%EB%B8%8C/%EA%B3%B5%EB%AA%85%EC%9E%90"
 )
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
+HEADERS = {"User-Agent": "Mozilla/5.0"}
 
-# "속성" 섹션에서 class="TrbsItZY" 카드로 찾은 링크 수가 이 값보다 적으면
-# (namu.wiki의 해시 class명은 배포마다 바뀌므로) class 매칭이 깨졌다고 보고
-# href="/w/..." 단독 매칭으로 폴백한다. 현재 공명자 수(40여 명)보다 훨씬
-# 낮게 잡은 안전 마진이다.
-MIN_ATTRIBUTE_LINKS = 20
+# 공명자 속성은 이 6종으로 고정되어 있다.
+ATTRIBUTE_NAMES = ["응결", "용융", "전도", "기류", "회절", "인멸"]
+
+# namu.wiki가 동명이인 문서와 구분하기 위해 이름에 붙이는 표기.
+# 예: "산화(명조: 워더링 웨이브)" -> "산화"
+_DISAMBIGUATION_SUFFIX = re.compile(r"\(명조:\s*워더링\s*웨이브\)")
 
 
 def fetch_soup(url: str) -> BeautifulSoup:
@@ -35,20 +28,90 @@ def fetch_soup(url: str) -> BeautifulSoup:
     return BeautifulSoup(response.text, "html.parser")
 
 
-def find_attribute_section(soup: BeautifulSoup) -> Tag:
-    """[ 속성별 ] 섹션을 감싸는 <details> 요소를 반환한다.
+def _find_attribute_heading(soup: BeautifulSoup):
+    """ "3. 속성" 섹션의 <h2> 헤딩을 찾는다 (섹션 번호는 하드코딩하지 않고
+    id="속성" span, 없으면 id="s-3" 앵커로 폴백). 못 찾으면 None."""
+    for heading in soup.find_all("h2"):
+        if heading.find("span", id="속성"):
+            return heading
 
-    섹션을 찾지 못하면 ValueError를 발생시킨다.
-    """
-    summary = soup.find(
-        "summary",
-        string=lambda s: s and "속성별" in s
-    )
+        if heading.find("a", id="s-3"):
+            return heading
 
-    if summary is None:
-        raise ValueError("[ 속성별 ] 섹션을 찾을 수 없습니다.")
+    return None
 
-    return summary.find_parent("details")
+
+def crawl_character_urls() -> dict[str, str]:
+    """ "3. 속성" 섹션 아래 속성별 표(이름 tr 다음 형제 tr에 링크)에서 공명자
+    이름 -> 나무위키 문서 URL 딕셔너리를 만든다. "방랑자"는 속성 구분과
+    무관하게 문서 전체 등장 순서대로 전도/기류/회절/인멸로 구분한다."""
+    rover_names = ["방랑자·전도", "방랑자·기류", "방랑자·회절", "방랑자·인멸"]
+    rover_idx = 0
+
+    soup = fetch_soup(CHARACTER_LIST_URL)
+
+    heading = _find_attribute_heading(soup)
+
+    if heading is None:
+        raise ValueError("[ 속성 ] 섹션을 찾을 수 없습니다.")
+
+    character_urls = {}
+    seen_hrefs = set()
+
+    # ATTRIBUTE_NAMES로 "시작하는" tr을 찾는다 (실제 라벨은 "응결(Glacio |
+    # 冷凝)"처럼 영문/한자가 붙어 있어 정확 일치 대신 접두어 일치로 확인).
+    for el in heading.find_all_next():
+
+        if el.name == "h2":
+            break
+
+        if el.name != "tr":
+            continue
+
+        label_text = el.get_text(strip=True)
+
+        if not any(label_text.startswith(name) for name in ATTRIBUTE_NAMES):
+            continue
+
+        data_tr = el.find_next_sibling("tr")
+
+        if data_tr is None:
+            continue
+
+        for link in data_tr.find_all("a"):
+
+            href = link.get("href")
+
+            if not href or not href.startswith("/w/") or href in seen_hrefs:
+                continue
+
+            seen_hrefs.add(href)
+
+            name = link.get("title")
+
+            if not name:
+                strong = link.find("strong")
+                name = strong.get_text(strip=True) if strong else None
+
+            if not name:
+                continue
+
+            name = _DISAMBIGUATION_SUFFIX.sub("", name).strip()
+
+            if not name:
+                continue
+
+            if name == "방랑자":
+                name = rover_names[rover_idx]
+                rover_idx += 1
+            elif name.startswith("방랑자/"):
+                # 실제 title은 "방랑자/전도"처럼 "/"로 붙어 나온다.
+                # 표기를 다른 방랑자 변형과 동일하게 "·"로 통일한다.
+                name = "방랑자·" + name[len("방랑자/") :]
+
+            character_urls[name] = "https://namu.wiki" + href
+
+    return character_urls
 
 
 def in_noscript(tag: Tag) -> bool:
@@ -77,79 +140,6 @@ def is_resonator_alt(alt: str | None) -> bool:
 def resonator_name_from_alt(alt: str) -> str:
     """이미지 alt 텍스트에서 공명자 이름을 추출한다. 예) "명조 안코 아이콘" -> "안코"."""
     return alt.replace("명조 ", "").replace(" 아이콘", "")
-
-
-def _find_attribute_heading(soup: BeautifulSoup) -> Tag | None:
-    """"3. 속성" 섹션의 <h2> 헤딩을 찾는다 (섹션 번호는 하드코딩하지 않고
-    id="속성" span, 없으면 id="s-3" 앵커로 폴백). 못 찾으면 None.
-
-    find_attribute_section()과 별개다 — 그쪽은 resonater_thumbnail.py가
-    여전히 쓰는 옛 [ 속성별 ] 구조 탐색이라 건드리지 않는다.
-    """
-    for heading in soup.find_all("h2"):
-        if heading.find("span", id="속성"):
-            return heading
-
-        if heading.find("a", id="s-3"):
-            return heading
-
-    return None
-
-
-def _resonator_links_in_section(heading: Tag) -> list[Tag]:
-    """heading 다음 <h2> 전까지 href="/w/..."인 <a>를 모은다. class="TrbsItZY"
-    카드를 우선하되, 해시 class명이 바뀌어 MIN_ATTRIBUTE_LINKS보다 적게
-    잡히면 class 조건 없이 href만으로 다시 모은 목록으로 폴백한다."""
-    links = []
-
-    for el in heading.find_all_next():
-        if el.name == "h2":
-            break
-
-        if el.name == "a" and (el.get("href") or "").startswith("/w/"):
-            links.append(el)
-
-    primary = [link for link in links if "TrbsItZY" in (link.get("class") or [])]
-
-    if len(primary) >= MIN_ATTRIBUTE_LINKS:
-        return primary
-
-    return links
-
-
-def crawl_character_urls() -> dict[str, str]:
-    """"3. 속성" 섹션에서 공명자 이름 -> 나무위키 문서 URL 딕셔너리를 만든다."""
-    soup = fetch_soup(CHARACTER_LIST_URL)
-
-    heading = _find_attribute_heading(soup)
-
-    if heading is None:
-        raise ValueError("[ 속성 ] 섹션을 찾을 수 없습니다.")
-
-    character_urls: dict[str, str] = {}
-    seen_hrefs = set()
-
-    for link in _resonator_links_in_section(heading):
-
-        href = link.get("href")
-
-        if not href or href in seen_hrefs:
-            continue
-
-        seen_hrefs.add(href)
-
-        name = link.get("title")
-
-        if not name:
-            strong = link.find("strong")
-            name = strong.get_text(strip=True) if strong else None
-
-        if not name:
-            continue
-
-        character_urls[name] = "https://namu.wiki" + href
-
-    return character_urls
 
 
 def find_name(wiki_url: str) -> str:
