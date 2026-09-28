@@ -5,7 +5,6 @@ from util import (
     save,
     find_name,
     fetch_soup,
-    find_attribute_section,
     extract_img_src,
     in_noscript,
     is_resonator_alt,
@@ -19,14 +18,12 @@ THUMBNAIL_DIR = Path("resources/images/thumbnails")
 
 THUMBNAIL_DIR.mkdir(parents=True, exist_ok=True)
 
+
 def find_thumbnail_url(wiki_url):
     soup = fetch_soup(wiki_url)
 
-    # [ 속성별 ] 섹션 찾기
-    attribute_section = find_attribute_section(soup)
-
     # 이미지 경로 가져오기
-    for img in attribute_section.select('img[alt$="아이콘"]'):
+    for img in soup.select('img[alt$="아이콘"]'):
 
         if in_noscript(img):
             continue
