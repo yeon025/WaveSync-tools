@@ -210,16 +210,32 @@ def _portrait_img(table):
     return None
 
 
+def _subpage_portrait_img(table):
+    """하위 페이지의 보스 포트레이트 표에서 첫 "명조 " 이미지를 반환한다.
+
+    포트레이트 표는 HP/저항/소나타 아이콘 표를 하위 <table>로 품은 바깥 표라서,
+    이름 비교 없이 표 구조(하위 <table> 유무)만으로 아이콘 표와 구분한다."""
+    if table.find("table") is None:
+        return None
+
+    return _first_myeongjo_img(table)
+
+
 def find_subpage_image_url(soup):
-    """"보스 정보" 섹션의 포트레이트 테이블 중 마지막 것의 이미지 URL."""
-    heading = _heading_by_span_id(soup, ["h3"], "보스 정보")
+    """"보스 정보" 섹션의 포트레이트 테이블 중 마지막 것의 이미지 URL.
+
+    문서에 따라 "보스 정보"가 <h3>(대부분) 또는 <h2>(예: 알레프-원)로 나오므로
+    둘 다 찾고, 섹션 끝은 그 제목과 같거나 상위인 다음 제목으로 본다."""
+    heading = _heading_by_span_id(soup, ["h2", "h3"], "보스 정보")
     if heading is None:
         return None
 
+    stop_tags = ("h2",) if heading.name == "h2" else ("h2", "h3")
+
     portrait_imgs = [
         img
-        for table in _section_tables(heading, ("h2", "h3"))
-        if (img := _portrait_img(table)) is not None
+        for table in _section_tables(heading, stop_tags)
+        if (img := _subpage_portrait_img(table)) is not None
     ]
 
     if not portrait_imgs:
