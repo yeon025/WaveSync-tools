@@ -43,10 +43,7 @@ def _find_attribute_heading(soup: BeautifulSoup):
 
 def crawl_character_urls() -> dict[str, str]:
     """ "3. 속성" 섹션 아래 속성별 표(이름 tr 다음 형제 tr에 링크)에서 공명자
-    이름 -> 나무위키 문서 URL 딕셔너리를 만든다. "방랑자"는 속성 구분과
-    무관하게 문서 전체 등장 순서대로 전도/기류/회절/인멸로 구분한다."""
-    rover_names = ["방랑자·전도", "방랑자·기류", "방랑자·회절", "방랑자·인멸"]
-    rover_idx = 0
+    이름 -> 나무위키 문서 URL 딕셔너리를 만든다."""
 
     soup = fetch_soup(CHARACTER_LIST_URL)
 
@@ -101,13 +98,9 @@ def crawl_character_urls() -> dict[str, str]:
             if not name:
                 continue
 
-            if name == "방랑자":
-                name = rover_names[rover_idx]
-                rover_idx += 1
-            elif name.startswith("방랑자/"):
-                # 실제 title은 "방랑자/전도"처럼 "/"로 붙어 나온다.
-                # 표기를 다른 방랑자 변형과 동일하게 "·"로 통일한다.
-                name = "방랑자·" + name[len("방랑자/") :]
+            if name.startswith("방랑자/"):
+                name = "방랑자"
+                href = href.rsplit("/", 1)[0]
 
             character_urls[name] = "https://namu.wiki" + href
 
