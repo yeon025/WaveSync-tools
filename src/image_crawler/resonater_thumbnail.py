@@ -19,11 +19,11 @@ THUMBNAIL_DIR = Path("resources/images/thumbnails")
 THUMBNAIL_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def find_thumbnail_url(wiki_url):
+def find_thumbnail_url(wiki_url, name):
     soup = fetch_soup(wiki_url)
 
     # 이미지 경로 가져오기
-    for img in soup.select('img[alt$="아이콘"]'):
+    for img in soup.select(f'img[alt="명조 {name} 아이콘"]'):
 
         if in_noscript(img):
             continue
@@ -61,10 +61,10 @@ if __name__ == "__main__":
             continue
 
         try:
-            src = find_thumbnail_url(wiki_url)
-            name = find_name(wiki_url)
+            src = find_thumbnail_url(wiki_url, name)
+            english_name = find_name(wiki_url)
 
-            save(src, f"{name}-thumbnail", THUMBNAIL_DIR)
+            save(src, f"{english_name}-thumbnail", THUMBNAIL_DIR)
 
         except Exception as e:
             print(f"[오류] {name}: {e}")
